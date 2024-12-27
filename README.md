@@ -1,5 +1,3 @@
-# skillforge-code
-
 ## IT Courses {i}Code
 
 ### Repository: `skillforge-code`
