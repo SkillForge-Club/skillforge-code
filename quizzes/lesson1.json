@@ -1,17 +1,17 @@
 [
   {
-    "question": "What does this image represent?",
+    "question": "Ushbu rasm nimani anglatadi?",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
     "options": [
-      "A programming language",
-      "A style sheet language",
-      "A markup language",
-      "None of the above"
+      "Dasturlash tili",
+      "Stil varaqasi tili",
+      "Markap tili",
+      "Yuqaridagi hech biri"
     ],
-    "answer": "A programming language"
+    "answer": "Dasturlash tili"
   },
   {
-    "question": "Which of the following is an image of CSS?",
+    "question": "Quyidagi rasmlardan qaysi biri CSSni ifodalaydi?",
     "options": [
       {
         "type": "image",
@@ -30,13 +30,13 @@
     "answer": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
   },
   {
-    "question": "What language does this logo represent?",
+    "question": "Ushbu logo qaysi tili ifodalangan?",
     "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
     "options": ["JavaScript", "Java", "C++", "Go"],
     "answer": "JavaScript"
   },
   {
-    "question": "Which of the following images represents HTML?",
+    "question": "Quyidagi rasmlardan qaysi biri HTMLni ifodalaydi?",
     "options": [
       {
         "type": "image",
@@ -55,12 +55,12 @@
     "answer": "https://upload.wikimedia.org/wikipedia/commons/a/a4/HTML5_logo_and_wordmark.svg"
   },
   {
-    "question": "Which of these is a type of database?",
+    "question": "Quyidagilardan qaysi biri ma'lumotlar bazasi turi?",
     "options": ["MySQL", "Node.js", "Angular", "React"],
     "answer": "MySQL"
   },
   {
-    "question": "Identify the logo for Python:",
+    "question": "Pythonning logosini aniqlang:",
     "options": [
       {
         "type": "image",
@@ -79,7 +79,7 @@
     "answer": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
   },
   {
-    "question": "Which is the correct way to write a for loop in JavaScript?",
+    "question": "JavaScriptda for siklini to'g'ri qanday yozish kerak?",
     "options": [
       "for i in range(10):",
       "for (let i = 0; i < 10; i++) {}",
@@ -89,7 +89,7 @@
     "answer": "for (let i = 0; i < 10; i++) {}"
   },
   {
-    "question": "Which image represents the logo for React.js?",
+    "question": "Qaysi rasm React.js logotipini ifodalaydi?",
     "options": [
       {
         "type": "image",

@@ -35,14 +35,14 @@ async function renderLesson(lessonId) {
 
     lessonContent.innerHTML += `
       <button class='back-menu-btn' >
-        <a href="course.html?id=${courseId}">Back To Course Page</a>
+        <a href="course.html?id=${courseId}">Kurs sahifasiga qaytish</a>
       </button>`;
     lessonContent.innerHTML += marked.parse(markdown);
 
     quizLink.href = `/quiz.html?quiz=${lesson.id}`;
   } catch (error) {
-    lessonTitle.textContent = "Lesson Not Found";
-    lessonContent.innerHTML = `<p>Sorry, the lesson you're looking for doesn't exist.</p>`;
+    lessonTitle.textContent = "Dars topilmadi";
+    lessonContent.innerHTML = `<p>Kechirasiz, siz izlayotgan darsingiz topilmadi.</p>`;
     console.error("Error rendering lesson:", error);
   }
 }
@@ -50,6 +50,6 @@ async function renderLesson(lessonId) {
 if (lessonId) {
   renderLesson(lessonId);
 } else {
-  lessonTitle.textContent = "No Lesson Selected";
-  lessonContent.innerHTML = `<p>Please select a lesson.</p>`;
+  lessonTitle.textContent = "Dars tanlanmagan";
+  lessonContent.innerHTML = `<p>Iltimos, darsni tanlang.</p>`;
 }

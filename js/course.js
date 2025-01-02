@@ -6,7 +6,7 @@ fetch("/data/courses.json")
     const course = courses.find((c) => c.id === courseId);
 
     if (!course) {
-      document.body.innerHTML = "<h1>Course not found!</h1>";
+      document.body.innerHTML = "<h1>Kurs topilmadi!</h1>";
       return;
     }
 
@@ -21,15 +21,15 @@ fetch("/data/courses.json")
         .then((lessons) => {
           const lesson = lessons.find((l) => l.id === lessonId);
           const lessonElement = document.createElement("div");
-          lessonElement.classList.add('lessonElement')
+          lessonElement.classList.add("lessonElement");
 
           const lessonContent = document.createElement("div");
-          lessonContent.classList.add('lessonContent')
+          lessonContent.classList.add("lessonContent");
 
           lessonContent.innerHTML = `
             <h3>${lesson.title}</h3>
             <p>${lesson.description}</p>
-            <button><a href="/lesson.html?lesson=${lesson.id}">View Lesson</a></button>
+            <button><a href="/lesson.html?lesson=${lesson.id}">Kursni ko'rish</a></button>
           `;
           lessonElement.appendChild(lessonContent);
           lessonsContainer.appendChild(lessonElement);

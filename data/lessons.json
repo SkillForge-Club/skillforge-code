@@ -2,15 +2,15 @@
   {
     "id": "lesson1",
     "course": "course1",
-    "title": "Lesson 1: Variables in JavaScript",
-    "description": "Learn about variables in JavaScript.",
+    "title": "Dars 1: JavaScriptda o'zgaruvchilar",
+    "description": "JavaScriptda o'zgaruvchilar haqida o'rganing.",
     "file": "/lessons/lesson1.md"
   },
   {
     "id": "lesson2",
     "course": "course1",
-    "title": "Functions in JavaScript",
-    "description": "Explore functions and how to use them.",
+    "title": "JavaScriptda funksiyalar",
+    "description": "Funksiyalarni o'rganing va ularni qanday ishlatishni bilib oling.",
     "file": "/lessons/lesson2.md"
   }
 ]

@@ -22,14 +22,14 @@ document.body.appendChild(notifications);
 async function renderStartMenu(quizId) {
   quizData = await fetchQuiz(quizId);
   if (!quizData) {
-    quizTitle.textContent = "Quiz Not Found";
+    quizTitle.textContent = "Test topilmadi";
     startMenu.innerHTML =
-      "<p>Sorry, the quiz you're looking for doesn't exist.</p>";
+      "<p>Kechirasiz, siz izlayotgan testingiz topilmadi.</p>";
     return;
   }
 
   quizTitle.textContent = `Quiz: ${quizId}`;
-  questionCount.textContent = `This quiz contains ${quizData.length} questions.`;
+  questionCount.textContent = `Ushbu testda ${quizData.length} ta savol mavjud.`;
   startMenu.style.display = "block";
 }
 
@@ -61,9 +61,9 @@ function renderQuestion(index) {
   const questionDiv = document.createElement("div");
   questionDiv.classList.add("quiz-question");
 
-  let questionContent = `<h3>Question ${index + 1}: ${question.question}</h3>`;
+  let questionContent = `<h3>Savol ${index + 1}: ${question.question}</h3>`;
   if (question.image) {
-    questionContent += `<img src="${question.image}" alt="Question Image" class="question-image">`;
+    questionContent += `<img src="${question.image}" alt="Savol rasmi" class="question-image">`;
   }
 
   const options = question.options
@@ -84,7 +84,7 @@ function renderQuestion(index) {
 
   questionDiv.innerHTML = questionContent + options;
   quizContainer.appendChild(questionDiv);
-  resultElement.textContent = `Question ${index + 1}/${quizData.length}`;
+  resultElement.textContent = `Savol ${index + 1}-chi/${quizData.length}-ta`;
   checkButton.style.display = "block"; // Show check button
 }
 
@@ -115,12 +115,12 @@ function playSound(type) {
 }
 
 function handleCheck() {
-  if (checkButton.textContent === "Next") {
+  if (checkButton.textContent === "Keyingi") {
     // Move to the next question
     currentQuestionIndex++;
     if (currentQuestionIndex < quizData.length) {
       renderQuestion(currentQuestionIndex);
-      checkButton.textContent = "Check"; // Reset button text to "Check"
+      checkButton.textContent = "Tekshirish"; // Reset button text to "Check"
     } else {
       showResults(); // Show results if all questions are done
     }
@@ -132,7 +132,7 @@ function handleCheck() {
     `input[name="q${currentQuestionIndex}"]:checked`
   );
   if (!selected) {
-    showNotification("Please select an answer before checking.", "error");
+    showNotification("Iltimos, tekshirishdan oldin javobni tanlang.", "error");
     return;
   }
 
@@ -142,11 +142,11 @@ function handleCheck() {
   if (userAnswer === correctAnswer) {
     if (!incorrectAttempts[currentQuestionIndex]) {
       score++; // Increment score only if no previous incorrect attempts
-      showNotification("Correct! 🎉", "success");
+      showNotification("To'g'ri! 🎉", "success");
       playSound("correct"); // Play correct sound
     } else {
       showNotification(
-        "Correct, but no points awarded due to previous attempt.",
+        "To'g'ri, lekin oldingi urinish sababli ball berilmadi.",
         "info"
       );
     }
@@ -160,7 +160,7 @@ function handleCheck() {
 
     checkButton.textContent = "Next"; // Change button to "Next"
   } else {
-    showNotification("Incorrect, try again!", "error");
+    showNotification("Noto'g'ri, qayta urinib ko'ring!", "error");
     playSound("wrong"); // Play wrong sound
     incorrectAttempts[currentQuestionIndex] = true;
   }
@@ -176,14 +176,14 @@ function getRandomQuestions(allQuestions, numQuestions = 5) {
 // Display the results
 function showResults() {
   quizContainer.innerHTML = `
-    <h2>Quiz Completed!</h2>
+    <h2>Test yakunlandi!</h2>
     <p>Your score: ${score}/${quizData.length}</p>
     <p>${
       score === quizData.length
-        ? "🎉 You mastered it!"
-        : "Better luck next time!"
+        ? "🎉 Siz buni mukammal bajardingiz!"
+        : "Keyingi safar omad tilayman!"
     }</p>
-    <button id="retry-button" class="retry-button">Retry Quiz</button>
+    <button id="retry-button" class="retry-button">Testni qayta o'tash</button>
   `;
 
   checkButton.style.display = "none";
@@ -198,14 +198,14 @@ function showResults() {
 async function renderQuiz(quizId) {
   const allQuestions = await fetchQuiz(quizId);
   if (!allQuestions) {
-    quizTitle.textContent = "Quiz Not Found";
+    quizTitle.textContent = "Test topilmadi";
     quizContainer.innerHTML =
-      "<p>Sorry, the quiz you're looking for doesn't exist.</p>";
+      "<p>Kechirasiz, siz izlayotgan testingiz topilmadi.</p>";
     return;
   }
 
   quizData = allQuestions; // Random 5 questions
-  quizTitle.textContent = `Quiz: ${quizId}`;
+  quizTitle.textContent = `Test: ${quizId}`;
   userAnswers = Array(quizData.length).fill(null);
   incorrectAttempts = Array(quizData.length).fill(false);
   renderQuestion(currentQuestionIndex);

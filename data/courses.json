@@ -1,14 +1,14 @@
 [
   {
     "id": "course1",
-    "title": "JavaScript Basics",
-    "description": "Learn the fundamentals of JavaScript programming.",
+    "title": "JavaScript Asoslari ",
+    "description": "JavaScript dasturlashning asoslarini o'rganing.",
     "lessons": ["lesson1", "lesson2"]
   },
   {
     "id": "course2",
-    "title": "HTML & CSS",
-    "description": "Understand the basics of web design.",
+    "title": "HTML va CSS",
+    "description": "Veb dizaynning asoslarini tushuning.",
     "lessons": ["lesson3", "lesson4"]
   }
 ]

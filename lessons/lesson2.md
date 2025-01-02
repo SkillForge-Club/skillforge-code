@@ -1,12 +1,12 @@
-# Functions in JavaScript
+# JavaScriptda Funksiyalar
 
-Functions are reusable blocks of code that perform a specific task.
+Funksiyalar — bu muayyan vazifani bajaradigan qayta foydalaniladigan kod bloklaridir.
 
-## Example
+## Misol
 
 ```javascript
 function greet(name) {
-  console.log(`Hello, ${name}!`);
+  console.log(`Salom, ${name}!`);
 }
-greet("World");
+greet("Dunyo");
 ```
