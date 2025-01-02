@@ -1,0 +1,16 @@
+[
+  {
+    "id": "lesson1",
+    "course": "course1",
+    "title": "Lesson 1: Variables in JavaScript",
+    "description": "Learn about variables in JavaScript.",
+    "file": "/lessons/lesson1.md"
+  },
+  {
+    "id": "lesson2",
+    "course": "course1",
+    "title": "Functions in JavaScript",
+    "description": "Explore functions and how to use them.",
+    "file": "/lessons/lesson2.md"
+  }
+]

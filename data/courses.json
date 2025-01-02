@@ -1,0 +1,14 @@
+[
+  {
+    "id": "course1",
+    "title": "JavaScript Basics",
+    "description": "Learn the fundamentals of JavaScript programming.",
+    "lessons": ["lesson1", "lesson2"]
+  },
+  {
+    "id": "course2",
+    "title": "HTML & CSS",
+    "description": "Understand the basics of web design.",
+    "lessons": ["lesson3", "lesson4"]
+  }
+]

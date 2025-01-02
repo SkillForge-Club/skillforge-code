@@ -1,0 +1,23 @@
+[
+  {
+    "question": "What does this image represent?",
+    "image": "/images/js-logo.png",
+    "options": [
+      "A programming language",
+      "A style sheet language",
+      "A markup language",
+      "None of the above"
+    ],
+    "answer": "A programming language"
+  },
+  {
+    "question": "Which image represents CSS?",
+    "options": [
+      { "type": "image", "value": "/images/html-logo.png" },
+      { "type": "image", "value": "/images/css-logo.png" },
+      { "type": "image", "value": "/images/js-logo.png" },
+      { "type": "text", "value": "Python" }
+    ],
+    "answer": "/images/css-logo.png"
+  }
+]
