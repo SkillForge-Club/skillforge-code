@@ -1,42 +1,110 @@
 [
   {
-    "question": "What does HTML stand for?",
+    "question": "What does this image represent?",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
     "options": [
-      "HyperText Markup Language",
-      "HyperText Makeup Language",
-      "HyperTool Markup Language",
+      "A programming language",
+      "A style sheet language",
+      "A markup language",
       "None of the above"
     ],
-    "answer": "HyperText Markup Language"
+    "answer": "A programming language"
   },
   {
-    "question": "Which of the following is a programming language?",
-    "options": ["HTML", "CSS", "JavaScript", "SQL"],
+    "question": "Which of the following is an image of CSS?",
+    "options": [
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+      },
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/a/a4/HTML5_logo_and_wordmark.svg"
+      },
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/6/63/JavaScript-logo.png"
+      },
+      { "type": "text", "value": "Ruby" }
+    ],
+    "answer": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+  },
+  {
+    "question": "What language does this logo represent?",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    "options": ["JavaScript", "Java", "C++", "Go"],
     "answer": "JavaScript"
   },
   {
-    "question": "What is the main purpose of CSS?",
+    "question": "Which of the following images represents HTML?",
     "options": [
-      "Define the structure of a webpage",
-      "Style and format the layout of a webpage",
-      "Program logic and interactivity",
-      "None of the above"
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/a/a4/HTML5_logo_and_wordmark.svg"
+      },
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+      },
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+      },
+      { "type": "text", "value": "Swift" }
     ],
-    "answer": "Style and format the layout of a webpage"
+    "answer": "https://upload.wikimedia.org/wikipedia/commons/a/a4/HTML5_logo_and_wordmark.svg"
   },
   {
-    "question": "Which language is used to query a database?",
-    "options": ["Python", "SQL", "JavaScript", "PHP"],
-    "answer": "SQL"
+    "question": "Which of these is a type of database?",
+    "options": ["MySQL", "Node.js", "Angular", "React"],
+    "answer": "MySQL"
   },
   {
-    "question": "Which tag is used to define a hyperlink in HTML?",
-    "options": ["<a>", "<link>", "<href>", "<url>"],
-    "answer": "<a>"
+    "question": "Identify the logo for Python:",
+    "options": [
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/4/47/Java_logo_icon.png"
+      },
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+      },
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg"
+      },
+      { "type": "text", "value": "Perl" }
+    ],
+    "answer": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
   },
   {
-    "question": "Which of these is a valid JavaScript variable name?",
-    "options": ["1stVariable", "_myVariable", "my-variable", "var 123"],
-    "answer": "_myVariable"
+    "question": "Which is the correct way to write a for loop in JavaScript?",
+    "options": [
+      "for i in range(10):",
+      "for (let i = 0; i < 10; i++) {}",
+      "foreach i in [0, 10] {}",
+      "repeat(10) {}"
+    ],
+    "answer": "for (let i = 0; i < 10; i++) {}"
+  },
+  {
+    "question": "Which image represents the logo for React.js?",
+    "options": [
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+      },
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/7/72/Vue.js_Logo_2.svg"
+      },
+      {
+        "type": "image",
+        "value": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Angular_logo.svg"
+      },
+      { "type": "text", "value": "Flutter" }
+    ],
+    "answer": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
   }
 ]

@@ -64,6 +64,7 @@ nav a:hover {
   flex-direction: column;
   gap: 10px;
   flex-wrap: wrap;
+  height: 68vh;
 }
 
 .course-content {
@@ -135,6 +136,7 @@ header h1 {
   flex-direction: column;
   gap: 10px;
   max-width: 1000px;
+  margin-bottom: 10px;
 }
 
 .lessonElement {
@@ -235,10 +237,62 @@ div.quiz-div {
   margin: auto;
 }
 
-/* Quiz Page */
+/* Quiz Page Styles */
 
 #quiz-title {
-  padding: 10px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+#start-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #eaf4ff;
+  border: 2px solid #0a3981;
+  border-radius: 0px;
+  box-shadow: 0 4px 6px rgba(10, 57, 129, 0.2);
+}
+
+#start-menu h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0a3981;
+}
+
+#start-menu button {
+  background-color: #0a3981;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #0a3981;
+  font-size: 1.2rem;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#start-menu button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+#retry-button {
+  background-color: #0a3981;
+  color: #fff;
+  padding: 5px 10px;
+  border: 2px solid #0a3981;
+  font-size: 1.2rem;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#retry-button :hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
 }
 
 #quiz-container {
@@ -246,47 +300,121 @@ div.quiz-div {
   flex-direction: column;
   gap: 20px;
   max-width: 800px;
-  margin: auto;
-}
-
-.quiz-question {
-  display: flex;
-  flex-direction: column;
-  /* gap: 10px; */
-  padding-bottom: 10px;
-  color: #0a3981;
-  /* background-color: #78797a; */
+  margin: 20px auto;
+  padding: 20px;
+  background: #eaf4ff;
+  border: 2px solid #0a3981;
+  border-radius: 0px;
 }
 
 .quiz-question h3 {
-  font-size: 2rem;
-  padding: 10px;
+  font-size: 1.8rem;
+  color: #0a3981;
+  margin-bottom: 10px;
+}
+
+#question-count {
+  color: #0a3981;
+  margin-bottom: 10px;
 }
 
 .quiz-question img {
+  max-width: 100%;
   height: auto;
-  border-bottom: 3px solid white;
-
-  width: 100%; /* Default width for mobile view */
+  border-radius: 0px;
+  margin-top: 10px;
 }
 
-/* CSS for notification */
-/* CSS for notification */
+@media (min-width: 768px) {
+  /* Adjust the width threshold as needed */
+  .quiz-question img {
+    width: 100%; /* Smaller width for desktop view */
+  }
+}
+
+.quiz-question label img {
+  width: auto;
+  height: auto;
+  border: none;
+  max-width: 80%;
+}
+
+.quiz-question label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-bottom: 2px solid white;
+  border-radius: 0px;
+  background-color: #0a3981;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.quiz-question label:hover {
+  background-color: #00203e;
+  border-color: #0056b3;
+}
+
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 0px;
+  margin-right: 10px;
+  outline: none;
+  border-radius: 50%;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="radio"]:checked {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+#check-quiz {
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #0a3981;
+  color: white;
+  border: 2px solid #0a3981;
+  border-radius: 0px;
+  cursor: pointer;
+  display: block;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+#check-quiz:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.result {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #0a3981;
+}
+
+/* Notification Styles */
+
 .notifications {
-  position: absolute;
+  position: fixed;
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  width: 90%;
   max-width: 300px;
+  width: 90%;
   padding: 10px;
-  font-size: 14px;
   text-align: center;
-  border-radius: 5px;
-  color: #fff;
+  color: white;
+  font-size: 1rem;
   opacity: 1;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .notifications.fade-out {
@@ -305,87 +433,6 @@ div.quiz-div {
 .notifications.info {
   background-color: #2196f3;
 }
-
-@media (min-width: 768px) {
-  /* Adjust the width threshold as needed */
-  .quiz-question img {
-    width: 100%; /* Smaller width for desktop view */
-  }
-}
-
-.quiz-question label img {
-  width: 100px;
-  border: none;
-}
-
-.quiz-question label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #0a3981;
-  color: white;
-  padding: 10px;
-  border-bottom: 3px solid white;
-}
-
-input[type="radio"] {
-  width: 1.5em; /* Adjust size */
-  height: 1.5em;
-  appearance: none; /* Remove default styling */
-  border: 2px solid #fff; /* Add border */
-  border-radius: 50%; /* Make it circular */
-  outline: none; /* Remove focus outline */
-  cursor: pointer; /* Add pointer on hover */
-  transition: background-color 0.3s, border-color 0.3s; /* Smooth transitions */
-}
-
-input[type="radio"]:checked {
-  background-color: #007bff; /* Change background when checked */
-  border-color: #0056b3; /* Darken border */
-}
-
-input[type="radio"]:hover {
-  border-color: #0056b3; /* Change border color on hover */
-}
-
-.result {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;
-  padding: 10px;
-}
-
-.result p {
-  font-size: 1.2rem;
-  color: #0a3981;
-}
-
-#check-quiz {
-  text-decoration: none;
-  background-color: #0a3981;
-  border: none;
-  padding: 10px;
-  color: #fff;
-  font-size: 1.2rem;
-}
-
-#check-quiz button:hover {
-  background-color: #00203e;
-}
-
-#check-quiz button a {
-  text-decoration: none;
-  color: white;
-  font-weight: 200;
-}
-
-#check-quiz button a:hover {
-  text-decoration: underline;
-}
-
 /*Footer */
 
 .footer {
@@ -440,6 +487,8 @@ input[type="radio"]:hover {
   margin-top: 15px;
   font-size: 0.9em;
 }
+
+
 
 @media (max-width: 1100px) {
   nav a {

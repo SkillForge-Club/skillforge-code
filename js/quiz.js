@@ -13,6 +13,7 @@ let currentQuestionIndex = 0;
 let quizData = [];
 let userAnswers = [];
 let incorrectAttempts = [];
+let score = 0; // Track the user's score
 let notifications = document.createElement("div");
 notifications.className = "notifications";
 document.body.appendChild(notifications);
@@ -140,6 +141,7 @@ function handleCheck() {
 
   if (userAnswer === correctAnswer) {
     if (!incorrectAttempts[currentQuestionIndex]) {
+      score++; // Increment score only if no previous incorrect attempts
       showNotification("Correct! 🎉", "success");
       playSound("correct"); // Play correct sound
     } else {
@@ -148,6 +150,8 @@ function handleCheck() {
         "info"
       );
     }
+
+    userAnswers[currentQuestionIndex] = userAnswer;
 
     // Disable all options
     document
@@ -171,13 +175,6 @@ function getRandomQuestions(allQuestions, numQuestions = 5) {
 
 // Display the results
 function showResults() {
-  let score = 0;
-  quizData.forEach((question, index) => {
-    if (userAnswers[index] === question.answer && !incorrectAttempts[index]) {
-      score++;
-    }
-  });
-
   quizContainer.innerHTML = `
     <h2>Quiz Completed!</h2>
     <p>Your score: ${score}/${quizData.length}</p>
@@ -186,12 +183,18 @@ function showResults() {
         ? "🎉 You mastered it!"
         : "Better luck next time!"
     }</p>
+    <button id="retry-button" class="retry-button">Retry Quiz</button>
   `;
+
   checkButton.style.display = "none";
+
+  const retryButton = document.getElementById("retry-button");
+  retryButton.addEventListener("click", () => {
+    location.reload(); // Reload the page to retry the quiz
+  });
 }
 
 // Initialize the quiz
-// Initialize the quiz with random questions
 async function renderQuiz(quizId) {
   const allQuestions = await fetchQuiz(quizId);
   if (!allQuestions) {
