@@ -96,3 +96,5 @@ console.log(greet("World"));
 3. Apply the CSS styling from earlier and ensure all elements are styled correctly.
 
 Let me know if you need help customizing further!
+
+[Video](https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4)

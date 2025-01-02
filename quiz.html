@@ -8,12 +8,46 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <img src="images/logo-code.png" alt="{i}Code Logo" />
+      </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="links">
+        <a href="https://t.me/icode_club">Telegram</a>
+        <a href="courses.html">Kurslar</a>
+        <a href="https://skillforge.uz/">SkillForge</a>
+        <a href="#">Testlar</a>
+        <a href="index.html">Bosh menuga</a>
+      </div>
+    </nav>
+    <header>
       <h1 id="quiz-title">Quiz</h1>
     </header>
     <main>
-      <div id="quiz-container"></div>
-      <button id="check-quiz" style="display: none">Check Quiz</button>
-      <p id="quiz-result"></p>
+      <main>
+        <!-- Start menu -->
+        <div id="start-menu" class="start-menu">
+          <h2 id="start-message">Ready to practice?</h2>
+          <p id="question-count"></p>
+          <button id="start-button">Let's Go</button>
+        </div>
+
+        <!-- Quiz container -->
+        <div
+          id="quiz-container"
+          class="custom-radio"
+          style="display: none"
+        ></div>
+
+        <!-- Result and Check button -->
+        <div class="result">
+          <button id="check-quiz" style="display: none">Check</button>
+          <p id="quiz-result"></p>
+        </div>
+      </main>
     </main>
     <script src="/js/quiz.js"></script>
   </body>

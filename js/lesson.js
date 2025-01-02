@@ -29,7 +29,15 @@ async function renderLesson(lessonId) {
     if (!response.ok) throw new Error("Markdown file not found");
 
     const markdown = await response.text();
-    lessonContent.innerHTML = marked.parse(markdown);
+
+    // Use the `course` field to determine the course link
+    const courseId = lesson.course;
+
+    lessonContent.innerHTML += `
+      <button class='back-menu-btn' >
+        <a href="course.html?id=${courseId}">Back To Course Page</a>
+      </button>`;
+    lessonContent.innerHTML += marked.parse(markdown);
 
     quizLink.href = `/quiz.html?quiz=${lesson.id}`;
   } catch (error) {

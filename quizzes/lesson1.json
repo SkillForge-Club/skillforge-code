@@ -1,23 +1,42 @@
 [
   {
-    "question": "What does this image represent?",
-    "image": "/images/js-logo.png",
+    "question": "What does HTML stand for?",
     "options": [
-      "A programming language",
-      "A style sheet language",
-      "A markup language",
+      "HyperText Markup Language",
+      "HyperText Makeup Language",
+      "HyperTool Markup Language",
       "None of the above"
     ],
-    "answer": "A programming language"
+    "answer": "HyperText Markup Language"
   },
   {
-    "question": "Which image represents CSS?",
+    "question": "Which of the following is a programming language?",
+    "options": ["HTML", "CSS", "JavaScript", "SQL"],
+    "answer": "JavaScript"
+  },
+  {
+    "question": "What is the main purpose of CSS?",
     "options": [
-      { "type": "image", "value": "/images/html-logo.png" },
-      { "type": "image", "value": "/images/css-logo.png" },
-      { "type": "image", "value": "/images/js-logo.png" },
-      { "type": "text", "value": "Python" }
+      "Define the structure of a webpage",
+      "Style and format the layout of a webpage",
+      "Program logic and interactivity",
+      "None of the above"
     ],
-    "answer": "/images/css-logo.png"
+    "answer": "Style and format the layout of a webpage"
+  },
+  {
+    "question": "Which language is used to query a database?",
+    "options": ["Python", "SQL", "JavaScript", "PHP"],
+    "answer": "SQL"
+  },
+  {
+    "question": "Which tag is used to define a hyperlink in HTML?",
+    "options": ["<a>", "<link>", "<href>", "<url>"],
+    "answer": "<a>"
+  },
+  {
+    "question": "Which of these is a valid JavaScript variable name?",
+    "options": ["1stVariable", "_myVariable", "my-variable", "var 123"],
+    "answer": "_myVariable"
   }
 ]

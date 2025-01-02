@@ -5,98 +5,212 @@ const quizTitle = document.getElementById("quiz-title");
 const quizContainer = document.getElementById("quiz-container");
 const checkButton = document.getElementById("check-quiz");
 const resultElement = document.getElementById("quiz-result");
+const startMenu = document.getElementById("start-menu");
+const startButton = document.getElementById("start-button");
+const questionCount = document.getElementById("question-count");
 
+let currentQuestionIndex = 0;
+let quizData = [];
+let userAnswers = [];
+let incorrectAttempts = [];
+let notifications = document.createElement("div");
+notifications.className = "notifications";
+document.body.appendChild(notifications);
+
+// Update to render the start menu with quiz data
+async function renderStartMenu(quizId) {
+  quizData = await fetchQuiz(quizId);
+  if (!quizData) {
+    quizTitle.textContent = "Quiz Not Found";
+    startMenu.innerHTML =
+      "<p>Sorry, the quiz you're looking for doesn't exist.</p>";
+    return;
+  }
+
+  quizTitle.textContent = `Quiz: ${quizId}`;
+  questionCount.textContent = `This quiz contains ${quizData.length} questions.`;
+  startMenu.style.display = "block";
+}
+
+// Handle the "Let's Go" button click
+startButton.addEventListener("click", () => {
+  startMenu.style.display = "none";
+  quizContainer.style.display = "block";
+  renderQuestion(currentQuestionIndex);
+});
+
+// Fetch the quiz data
 async function fetchQuiz(quizId) {
   try {
     const response = await fetch(`/quizzes/${quizId}.json`);
     if (!response.ok) throw new Error("Quiz file not found");
-    return await response.json();
+    const allQuestions = await response.json();
+    return getRandomQuestions(allQuestions, 5); // Select 5 random questions
   } catch (error) {
     console.error("Error fetching quiz:", error);
     return null;
   }
 }
 
-function renderQuizQuestion(question, index) {
+// Render a single question
+function renderQuestion(index) {
+  const question = quizData[index];
+  quizContainer.innerHTML = ""; // Clear the container
+
   const questionDiv = document.createElement("div");
   questionDiv.classList.add("quiz-question");
 
-  // Render question text and image if present
   let questionContent = `<h3>Question ${index + 1}: ${question.question}</h3>`;
   if (question.image) {
-    questionContent += `<img src="${question.image}" alt="Question Image" style="max-width: 100%; height: auto;">`;
+    questionContent += `<img src="${question.image}" alt="Question Image" class="question-image">`;
   }
 
-  // Render options
   const options = question.options
     .map((option, i) => {
-      if (typeof option === "object") {
-        // Handle options as objects
-        if (option.type === "image") {
-          return `
-            <label>
-              <input type="radio" name="q${index}" value="${option.value}">
-              <img src="${option.value}" alt="Option ${
-            i + 1
-          }" style="width: 50px; height: 50px;">
-            </label>
-          `;
-        } else if (option.type === "text") {
-          return `
-            <label>
-              <input type="radio" name="q${index}" value="${option.value}"> ${option.value}
-            </label>
-          `;
-        }
-      } else {
-        // Handle options as plain strings
-        return `
-          <label>
-            <input type="radio" name="q${index}" value="${option}"> ${option}
-          </label>
-        `;
-      }
+      const value = typeof option === "string" ? option : option.value;
+      return `
+        <label>
+          <input type="radio" name="q${index}" value="${value}" class="quiz-option">
+          ${
+            typeof option === "object" && option.type === "image"
+              ? `<img src="${value}" alt="Option ${i + 1}">`
+              : value
+          }
+        </label>
+      `;
     })
     .join("");
 
   questionDiv.innerHTML = questionContent + options;
-  return questionDiv;
+  quizContainer.appendChild(questionDiv);
+  resultElement.textContent = `Question ${index + 1}/${quizData.length}`;
+  checkButton.style.display = "block"; // Show check button
 }
 
+// Show custom notifications
+function showNotification(message, type = "info") {
+  const notification = document.createElement("div");
+  notification.className = `notifications ${type}`;
+  notification.textContent = message;
+  document.body.appendChild(notification);
+
+  // Trigger fade-out after 2.5 seconds
+  setTimeout(() => {
+    notification.classList.add("fade-out");
+    // Remove element after fade-out animation completes
+    setTimeout(() => notification.remove(), 500);
+  }, 2500);
+}
+
+// Function to play sound
+function playSound(type) {
+  const audio = new Audio();
+  if (type === "correct") {
+    audio.src = "audio/correct.mp3";
+  } else if (type === "wrong") {
+    audio.src = "audio/wrong.mp3";
+  }
+  audio.play();
+}
+
+function handleCheck() {
+  if (checkButton.textContent === "Next") {
+    // Move to the next question
+    currentQuestionIndex++;
+    if (currentQuestionIndex < quizData.length) {
+      renderQuestion(currentQuestionIndex);
+      checkButton.textContent = "Check"; // Reset button text to "Check"
+    } else {
+      showResults(); // Show results if all questions are done
+    }
+    return;
+  }
+
+  // Handle "Check" logic
+  const selected = document.querySelector(
+    `input[name="q${currentQuestionIndex}"]:checked`
+  );
+  if (!selected) {
+    showNotification("Please select an answer before checking.", "error");
+    return;
+  }
+
+  const userAnswer = selected.value;
+  const correctAnswer = quizData[currentQuestionIndex].answer;
+
+  if (userAnswer === correctAnswer) {
+    if (!incorrectAttempts[currentQuestionIndex]) {
+      showNotification("Correct! 🎉", "success");
+      playSound("correct"); // Play correct sound
+    } else {
+      showNotification(
+        "Correct, but no points awarded due to previous attempt.",
+        "info"
+      );
+    }
+
+    // Disable all options
+    document
+      .querySelectorAll(`input[name="q${currentQuestionIndex}"]`)
+      .forEach((input) => (input.disabled = true));
+
+    checkButton.textContent = "Next"; // Change button to "Next"
+  } else {
+    showNotification("Incorrect, try again!", "error");
+    playSound("wrong"); // Play wrong sound
+    incorrectAttempts[currentQuestionIndex] = true;
+  }
+}
+
+function getRandomQuestions(allQuestions, numQuestions = 5) {
+  // Shuffle the array
+  const shuffled = allQuestions.sort(() => 0.5 - Math.random());
+  // Return the first `numQuestions`
+  return shuffled.slice(0, numQuestions);
+}
+
+// Display the results
+function showResults() {
+  let score = 0;
+  quizData.forEach((question, index) => {
+    if (userAnswers[index] === question.answer && !incorrectAttempts[index]) {
+      score++;
+    }
+  });
+
+  quizContainer.innerHTML = `
+    <h2>Quiz Completed!</h2>
+    <p>Your score: ${score}/${quizData.length}</p>
+    <p>${
+      score === quizData.length
+        ? "🎉 You mastered it!"
+        : "Better luck next time!"
+    }</p>
+  `;
+  checkButton.style.display = "none";
+}
+
+// Initialize the quiz
+// Initialize the quiz with random questions
 async function renderQuiz(quizId) {
-  const quiz = await fetchQuiz(quizId);
-  if (!quiz) {
+  const allQuestions = await fetchQuiz(quizId);
+  if (!allQuestions) {
     quizTitle.textContent = "Quiz Not Found";
     quizContainer.innerHTML =
       "<p>Sorry, the quiz you're looking for doesn't exist.</p>";
     return;
   }
 
+  quizData = allQuestions; // Random 5 questions
   quizTitle.textContent = `Quiz: ${quizId}`;
-  quiz.forEach((question, index) => {
-    const questionElement = renderQuizQuestion(question, index);
-    quizContainer.appendChild(questionElement);
-  });
-
-  checkButton.style.display = "block";
+  userAnswers = Array(quizData.length).fill(null);
+  incorrectAttempts = Array(quizData.length).fill(false);
+  renderQuestion(currentQuestionIndex);
 }
 
-checkButton.addEventListener("click", async () => {
-  const quiz = await fetchQuiz(quizId);
-  if (!quiz) return;
-
-  let score = 0;
-  quiz.forEach((question, index) => {
-    const selected = document.querySelector(`input[name="q${index}"]:checked`);
-    if (selected && selected.value === question.answer) {
-      score++;
-    }
-  });
-
-  // Clear existing result
-  resultElement.textContent = `Your score: ${score}/${quiz.length}`;
-});
-
+// Adjust initialization
 if (quizId) {
-  renderQuiz(quizId);
+  renderStartMenu(quizId);
 }
+
+checkButton.addEventListener("click", handleCheck);

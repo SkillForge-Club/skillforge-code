@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lesson</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/md.css">
-    
+    <link rel="stylesheet" href="/css/md.css" />
   </head>
   <body>
     <header>
@@ -25,15 +24,17 @@
         <a href="index.html">Bosh menuga</a>
       </div>
     </nav>
-    
+
     <header>
       <h1 id="lesson-title">Lesson Title</h1>
     </header>
-    <main>
+    <main class="lesson-content-main">
       <article id="lesson-content"></article>
-      <footer>
-        <a id="quiz-link" href="" class="quiz-link">Take the Quiz</a>
-      </footer>
+      <div class="quiz-div">
+        <button class="quiz-link">
+          <a id="quiz-link" href="" class="quiz-link">Take the Quiz</a>
+        </button>
+      </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="/js/lesson.js"></script>

@@ -8,6 +8,10 @@
   padding: 20px;
 }
 
+#lesson-content button a{
+  color: white;
+}
+
 /* Headings */
 #lesson-content h1,
 #lesson-content h2,
