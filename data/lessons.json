@@ -1,16 +1,16 @@
 [
   {
-    "id": "lesson1",
+    "id": "1-dars",
     "course": "course1",
     "title": "Dars 1: JavaScriptda o'zgaruvchilar",
     "description": "JavaScriptda o'zgaruvchilar haqida o'rganing.",
-    "file": "/lessons/lesson1.md"
+    "file": "/lessons/1-dars.md"
   },
   {
-    "id": "lesson2",
+    "id": "2-dars",
     "course": "course1",
     "title": "JavaScriptda funksiyalar",
     "description": "Funksiyalarni o'rganing va ularni qanday ishlatishni bilib oling.",
-    "file": "/lessons/lesson2.md"
+    "file": "/lessons/2-dars.md"
   }
 ]

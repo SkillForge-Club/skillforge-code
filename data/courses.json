@@ -3,12 +3,12 @@
     "id": "course1",
     "title": "JavaScript Asoslari ",
     "description": "JavaScript dasturlashning asoslarini o'rganing.",
-    "lessons": ["lesson1", "lesson2"]
+    "lessons": ["1-dars", "2-dars"]
   },
   {
     "id": "course2",
     "title": "HTML va CSS",
     "description": "Veb dizaynning asoslarini tushuning.",
-    "lessons": ["lesson3", "lesson4"]
+    "lessons": ["3-dars", "4-dars"]
   }
 ]

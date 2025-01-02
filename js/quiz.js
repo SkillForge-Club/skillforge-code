@@ -28,7 +28,7 @@ async function renderStartMenu(quizId) {
     return;
   }
 
-  quizTitle.textContent = `Quiz: ${quizId}`;
+  quizTitle.textContent = `Test: ${quizId}`;
   questionCount.textContent = `Ushbu testda ${quizData.length} ta savol mavjud.`;
   startMenu.style.display = "block";
 }
@@ -158,7 +158,7 @@ function handleCheck() {
       .querySelectorAll(`input[name="q${currentQuestionIndex}"]`)
       .forEach((input) => (input.disabled = true));
 
-    checkButton.textContent = "Next"; // Change button to "Next"
+    checkButton.textContent = "Keyingi"; // Change button to "Next"
   } else {
     showNotification("Noto'g'ri, qayta urinib ko'ring!", "error");
     playSound("wrong"); // Play wrong sound
