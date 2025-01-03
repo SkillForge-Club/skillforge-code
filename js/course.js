@@ -43,7 +43,7 @@ fetch("/data/courses.json")
             lessonElement.innerHTML = `
               <h3>${lesson.title}</h3>
               <p>${lesson.description}</p>
-              <button><a href="/lesson.html?lesson=${lesson.id}">Kursni ko'rish</a></button>
+              <button><a href="/lesson.html?lesson=${lesson.id}">Darsni ko'rish</a></button>
             `;
             unitLessonsContainer.appendChild(lessonElement);
           });

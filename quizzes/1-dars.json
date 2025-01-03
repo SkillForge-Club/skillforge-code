@@ -3,50 +3,44 @@
     "question": "Image-question-text-option type",
     "image": "/images/logo-code.png",
     "options": [
-      {
-        "type": "text",
-        "value": "A"
-      },
-      {
-        "type": "text",
-        "value": "B"
-      },
-      {
-        "type": "text",
-        "value": "C"
-      },
-      {
-        "type": "text",
-        "value": "D"
-      }
+      { "type": "text", "value": "A" },
+      { "type": "text", "value": "B" },
+      { "type": "text", "value": "C" },
+      { "type": "text", "value": "D" }
     ],
-    "answer": "A"
+    "answer": "A",
+    "explanations": {
+      "A": "Option A is correct because it aligns with the question context.",
+      "B": "Option B is incorrect because it does not match the criteria.",
+      "C": "Option C is a common misconception related to the topic.",
+      "D": "Option D is irrelevant to the question."
+    }
   },
   {
     "question": "Text-question-image-option type",
     "options": [
-      {
-        "type": "image",
-        "value": "/images/logo-code.png"
-      },
-      {
-        "type": "image",
-        "value": "/images/logo-code.png"
-      },
-      {
-        "type": "image",
-        "value": "/images/logo-code.png"
-      },
-      {
-        "type": "image",
-        "value": "/images/logo-code.png"
-      }
+      { "type": "image", "value": "/images/logo-code.png" },
+      { "type": "image", "value": "/images/logo-code.png" },
+      { "type": "image", "value": "/images/logo-code.png" },
+      { "type": "image", "value": "/images/logo-code.png" }
     ],
-    "answer": "/images/logo-code.png"
+    "answer": "/images/logo-code.png",
+    "explanations": {
+      "/images/logo-code.png": "This image is correct as it matches the description.",
+      "/images/logo-other.png": "This image depicts a different context.",
+      "/images/logo-sample.png": "This option is a plausible alternative but incorrect.",
+      "/images/logo-test.png": "This image is unrelated to the question."
+    }
   },
   {
     "question": "Text-question-text-option type",
     "options": ["A", "B", "C", "D"],
-    "answer": "B"
+    "answer": "B",
+    "explanations": {
+      "A": "Option A is unrelated to the correct logic.",
+      "B": "Option B is correct due to its logical fit.",
+      "C": "Option C is misleading and does not solve the problem.",
+      "D": "Option D is a distractor."
+    }
   }
 ]
