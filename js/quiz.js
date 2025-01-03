@@ -84,7 +84,7 @@ function renderQuestion(index) {
 
   questionDiv.innerHTML = questionContent + options;
   quizContainer.appendChild(questionDiv);
-  resultElement.textContent = `Savol ${index + 1}-chi/${quizData.length}-ta`;
+  resultElement.textContent = `Savol ${index + 1}/${quizData.length}`;
   checkButton.style.display = "block"; // Show check button
 }
 
@@ -177,11 +177,11 @@ function getRandomQuestions(allQuestions, numQuestions = 5) {
 function showResults() {
   quizContainer.innerHTML = `
     <h2>Test yakunlandi!</h2>
-    <p>Your score: ${score}/${quizData.length}</p>
+    <p>Sizning ballingiz: ${score}/${quizData.length}</p>
     <p>${
       score === quizData.length
-        ? "🎉 Siz buni mukammal bajardingiz!"
-        : "Keyingi safar omad tilayman!"
+        ? "🎉 Siz testni mukammal bajardingiz!"
+        : "Keyingi safar omad tilayman! 🌟"
     }</p>
     <button id="retry-button" class="retry-button">Testni qayta o'tash</button>
   `;

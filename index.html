@@ -4,55 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{i}Code Klub</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
     <link rel="manifest" href="favicons/site.webmanifest" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/index.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      rel="stylesheet"
-    />
+
+    <!-- JS -->
+    <script src="/js/toggleMenu.js" async></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo-code.png" alt="{i}Code Logo" />
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo-code.png" alt="Code Logo" />
+        </div>
+        <nav class="navbar">
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="links">
+            <a href="https://t.me/icode_club">Telegram</a>
+            <a href="courses.html">Kurslar</a>
+            <a href="https://skillforge.uz/">SkillForge</a>
+            <a href="quizzes.html">Testlar</a>
+            <a href="index.html">Bosh menuga</a>
+          </div>
+        </nav>
       </div>
     </header>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="links">
-        <a href="https://t.me/icode_club">Telegram</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="https://skillforge.uz/">SkillForge</a>
-        <a href="quizzes.html">Testlar</a>
-        <a href="index.html">Bosh menuga</a>
-      </div>
-    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
         <h1>Amaliy Darslar Bilan Kodlashni O'rganing.</h1>
-        <p>
-          Kodlashni samarali o'rganish va o'rgatish uchun interaktiv darslar.
-        </p>
+        <p>Kodlashni samarali o'rganish va o'rgatish uchun interaktiv darslar.</p>
       </div>
     </section>
 
@@ -61,35 +60,20 @@
       <div class="about-content">
         <h1>{i}Code Club Haqida Ma'lumot</h1>
         <p>
-          <strong>{i}Code Club</strong> kodlash bo'yicha o'qitish va o'z-o'zini
-          rivojlantirish uchun noyob platforma. Bu joy shunchaki kod yozish
-          emas, balki shaxsiy o'sish, ijodkorlik va yangi ko'nikmalarni
-          o'zlashtirishni ham ta'kidlaydi.
+          <strong>{i}Code Club</strong>
+          kodlash bo'yicha o'qitish va o'z-o'zini rivojlantirish uchun noyob platforma. Bu joy shunchaki kod yozish emas, balki shaxsiy o'sish, ijodkorlik va yangi ko'nikmalarni o'zlashtirishni ham ta'kidlaydi.
         </p>
         <p>
-          Bizning klub nomimiz o'ziga xos ma'noga ega: "i" harfi har bir
-          a'zoning o'ziga xos yo'li va qobiliyatlarini aks ettiradi.
-          <u>"Code Club"</u> esa jamoaviy hamkorlik va bilimlarni birgalikda
-          o'rganishni ifodalaydi.
+          Bizning klub nomimiz o'ziga xos ma'noga ega: "i" harfi har bir a'zoning o'ziga xos yo'li va qobiliyatlarini aks ettiradi.
+          <u>"Code Club"</u>
+          esa jamoaviy hamkorlik va bilimlarni birgalikda o'rganishni ifodalaydi.
         </p>
         <p>
-          <strong>SkillForgening</strong> klubi tarkibida bizning missiyamiz
-          oddiy: bir xil qiziqishlarga ega bo'lgan odamlarni birlashtirib,
-          kodlashni samarali va qiziqarli o'rganish uchun iliq muhit yaratish.
-          Biz ishtirokchilarga murabbiylar va hamfikrlar bilan ishlash orqali
-          o'zlarining texnik qobiliyatlarini kuchaytirishga yordam beramiz.
+          <strong>SkillForgening</strong>
+          klubi tarkibida bizning missiyamiz oddiy: bir xil qiziqishlarga ega bo'lgan odamlarni birlashtirib, kodlashni samarali va qiziqarli o'rganish uchun iliq muhit yaratish. Biz ishtirokchilarga murabbiylar va hamfikrlar bilan ishlash orqali o'zlarining texnik qobiliyatlarini kuchaytirishga yordam beramiz.
         </p>
-        <p>
-          Saytimizdagi darslar nazariy materiallar sifatida ishlatiladi va ular
-          qo'llanma sifatida offline o'quv jarayonlarida muhim o'rin tutadi.
-          Ular o'qituvchi bilan yoki jamoa bo'lib amaliyot qilish orqali
-          mukammal natija beradi.
-        </p>
-        <p>
-          Bizning maqsadimiz kodlashni boshlashni istaganlar uchun to'liq
-          yo'nalish bo'lish, shuningdek, ilg'or dasturchilar uchun ham resurslar
-          va hamkorlik imkoniyatlarini taqdim etishdir.
-        </p>
+        <p>Saytimizdagi darslar nazariy materiallar sifatida ishlatiladi va ular qo'llanma sifatida offline o'quv jarayonlarida muhim o'rin tutadi. Ular o'qituvchi bilan yoki jamoa bo'lib amaliyot qilish orqali mukammal natija beradi.</p>
+        <p>Bizning maqsadimiz kodlashni boshlashni istaganlar uchun to'liq yo'nalish bo'lish, shuningdek, ilg'or dasturchilar uchun ham resurslar va hamkorlik imkoniyatlarini taqdim etishdir.</p>
       </div>
     </section>
 
@@ -97,10 +81,7 @@
     <section class="teachers">
       <h1>Bizning ustozlar</h1>
       <div class="teacher-card">
-        <img
-          src="https://skillforge.uz/images/profile/zohidjon-marufov.png"
-          alt="Ma'rufov Zohidjon"
-        />
+        <img src="https://skillforge.uz/images/profile/zohidjon-marufov.png" alt="Ma'rufov Zohidjon" />
         <h2>Ma'rufov Zohidjon</h2>
         <p>Dasturlashga qiziqish bilan yondashgan va o‘qitishga ishqiboz.</p>
       </div>
@@ -122,73 +103,41 @@
       <div class="info-cards">
         <div class="info-card">
           <h3>Offline Darslar</h3>
-          <p>
-            Bizning darslarimiz oflayn tarzda o‘tkaziladi, bu esa kodlashni
-            o‘rganishda amaliy yondashuvni taqdim etadi va diqqatni jamlashga
-            hamda interaktiv muhitda o‘qishga imkon beradi.
-          </p>
+          <p>Bizning darslarimiz oflayn tarzda o‘tkaziladi, bu esa kodlashni o‘rganishda amaliy yondashuvni taqdim etadi va diqqatni jamlashga hamda interaktiv muhitda o‘qishga imkon beradi.</p>
         </div>
         <div class="info-card">
           <h3>{i}Code Bilan Struktura</h3>
-          <p>
-            Biz {i}Code veb-saytini asosiy resurs sifatida ishlatamiz. Sayt
-            davomida murojaat qiladigan barcha nazariy materiallar va kod
-            snippetlarini taqdim etadi, bu esa mazmunni tartibli va tushunishni
-            oson qilib taqdim etadi.
-          </p>
+          <p>Biz {i}Code veb-saytini asosiy resurs sifatida ishlatamiz. Sayt davomida murojaat qiladigan barcha nazariy materiallar va kod snippetlarini taqdim etadi, bu esa mazmunni tartibli va tushunishni oson qilib taqdim etadi.</p>
         </div>
         <div class="info-card">
           <h3>Amaliy O‘rganish</h3>
-          <p>
-            {i}Code dan olingan strukturalangan kontent yordamida biz amaliy
-            mashqlarga e’tibor qaratamiz, bu sizga o‘rgangan narsalaringizni
-            real vaqt rejimida qo‘llash imkonini beradi.
-          </p>
+          <p>{i}Code dan olingan strukturalangan kontent yordamida biz amaliy mashqlarga e’tibor qaratamiz, bu sizga o‘rgangan narsalaringizni real vaqt rejimida qo‘llash imkonini beradi.</p>
         </div>
         <div class="info-card">
           <h3>Avval O‘zbekcha, So‘ngra Inglizcha</h3>
-          <p>
-            Hozirda darslarimizning aksariyati O‘zbek tilida o‘tkaziladi, lekin
-            biz asta-sekin ingliz tilidagi darslarga o‘tishni
-            rejalashtirmoqdamiz. Bu o‘zgarish global kodlash hamjamiyatiga
-            qo‘shilishga yordam beradi, chunki ingliz tili dasturlashning
-            universal tili hisoblanadi.
-          </p>
+          <p>Hozirda darslarimizning aksariyati O‘zbek tilida o‘tkaziladi, lekin biz asta-sekin ingliz tilidagi darslarga o‘tishni rejalashtirmoqdamiz. Bu o‘zgarish global kodlash hamjamiyatiga qo‘shilishga yordam beradi, chunki ingliz tili dasturlashning universal tili hisoblanadi.</p>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-      <div class="motto">
-        "Ko'nikmalarni Shakllantirish, Muvaffaqiyatni Qurish"
+      <h3>SkillForge Club</h3>
+      <p>"Ko'nikmalarni Shakllantirish, Muvaffaqiyatni Qurish"</p>
+      <div class="social-icons">
+        <a href="https://github.com/SkillForge-Club" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://t.me/skillforgeclub" target="_blank">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://www.instagram.com/skillforge.club/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
-      <div class="content">
-        <div class="contact">
-          <strong>Murojaat uchun:</strong><br />
-          Email:
-          <a href="mailto:skillforgeclub@gmail.com">skillforgeclub@gmail.com</a>
-        </div>
-        <div class="social">
-          <strong>Bizni kuzating:</strong>
-          <div class="icons">
-            <a href="https://github.com/SkillForge-Club" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://t.me/skillforgeclub" target="_blank">
-              <i class="fab fa-telegram"></i> Telegram
-            </a>
-            <a
-              href="https://www.instagram.com/skillforge.club/"
-              target="_blank"
-            >
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="rights"><b>© 2024 SkillForge, “{i}Code” Club.</b></div>
+      <p class="rights">
+        <b>© 2024 SkillForge, “{i}Code” Club.</b>
+      </p>
     </footer>
-
-    <script src="/js/index.js"></script>
   </body>
 </html>

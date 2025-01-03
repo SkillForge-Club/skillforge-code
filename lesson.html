@@ -4,90 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dars - {i}Code</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/md.css" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicons/site.webmanifest" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/lesson.css" />
+    <link rel="stylesheet" href="css/md.css" />
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js" async></script>
+    <script src="/js/lesson.js" async></script>
+    <script src="/js/toggleMenu.js" async></script>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo-code.png" alt="{i}Code Logo" />
+    <header class="header">
+      <div class="container">
+        <div class="logo">
+          <img src="images/logo-code.png" alt="Code Logo" />
+        </div>
+        <nav class="navbar">
+          <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="links">
+            <a href="https://t.me/icode_club">Telegram</a>
+            <a href="courses.html">Kurslar</a>
+            <a href="https://skillforge.uz/">SkillForge</a>
+            <a href="quizzes.html">Testlar</a>
+            <a href="index.html">Bosh menuga</a>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <!-- Navbar -->
-    <nav class="navbar">
-      <div class="links">
-        <a href="https://t.me/icode_club">Telegram</a>
-        <a href="courses.html">Kurslar</a>
-        <a href="https://skillforge.uz/">SkillForge</a>
-        <a href="quizzes.html">Testlar</a>
-        <a href="index.html">Bosh menuga</a>
-      </div>
-    </nav>
-
-    <header>
+    <div class="title">
       <h1 id="lesson-title">Lesson Title</h1>
-    </header>
+    </div>
     <main class="lesson-content-main">
       <article id="lesson-content"></article>
       <div class="quiz-div">
         <button class="quiz-link">
-          <a id="quiz-link" href="" class="quiz-link"
-            >Darsga oid testni yechish</a
-          >
+          <a id="quiz-link" href="" class="quiz-link">Darsga oid testni yechish</a>
         </button>
       </div>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="/js/lesson.js"></script>
 
+    <!-- Footer -->
     <footer class="footer">
-      <div class="motto">
-        "Ko'nikmalarni Shakllantirish, Muvaffaqiyatni Qurish"
+      <h3>SkillForge Club</h3>
+      <p>"Ko'nikmalarni Shakllantirish, Muvaffaqiyatni Qurish"</p>
+      <div class="social-icons">
+        <a href="https://github.com/SkillForge-Club" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://t.me/skillforgeclub" target="_blank">
+          <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://www.instagram.com/skillforge.club/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
-      <div class="content">
-        <div class="contact">
-          <strong>Murojaat uchun:</strong><br />
-          Email:
-          <a href="mailto:skillforgeclub@gmail.com">skillforgeclub@gmail.com</a>
-        </div>
-        <div class="social">
-          <strong>Bizni kuzating:</strong>
-          <div class="icons">
-            <a href="https://github.com/SkillForge-Club" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://t.me/skillforgeclub" target="_blank">
-              <i class="fab fa-telegram"></i> Telegram
-            </a>
-            <a
-              href="https://www.instagram.com/skillforge.club/"
-              target="_blank"
-            >
-              <i class="fab fa-instagram"></i> Instagram
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="rights"><b>© 2024 SkillForge, “{i}Code” Club.</b></div>
+      <p class="rights">
+        <b>© 2024 SkillForge, “{i}Code” Club.</b>
+      </p>
     </footer>
   </body>
 </html>

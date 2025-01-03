@@ -31,10 +31,10 @@ async function renderLesson(lessonId) {
     const markdown = await response.text();
 
     // Use the `course` field to determine the course link
-    const courseId = lesson.course;
+    const courseId = lesson.course; // This now supports IDs like 'Course1'
 
     lessonContent.innerHTML += `
-      <button class='back-menu-btn' >
+      <button class='back-menu-btn'>
         <a href="course.html?id=${courseId}">Kurs sahifasiga qaytish</a>
       </button>`;
     lessonContent.innerHTML += marked.parse(markdown);

@@ -1,14 +1,21 @@
 [
   {
     "id": "course1",
-    "title": "JavaScript Asoslari ",
-    "description": "JavaScript dasturlashning asoslarini o'rganing.",
-    "lessons": ["1-dars", "2-dars"]
-  },
-  {
-    "id": "course2",
-    "title": "HTML va CSS",
-    "description": "Veb dizaynning asoslarini tushuning.",
-    "lessons": ["3-dars", "4-dars"]
+    "title": "Frontend Development",
+    "description": "Learn the basics of frontend developmentLearn the basics of frontend development.",
+    "units": [
+      {
+        "id": "1-1",
+        "title": "Unit: HTML Basics",
+        "description": "Introduction to HTMLIntroduction to HTMLIntroduction to HTML.",
+        "lessons": ["1-dars", "2-dars", "2-dars"]
+      },
+      {
+        "id": "1-2",
+        "title": "CSS Fundamentals",
+        "description": "Styling with CSS.",
+        "lessons": ["3-dars", "4"]
+      }
+    ]
   }
 ]

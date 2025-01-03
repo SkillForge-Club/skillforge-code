@@ -1,0 +1,29 @@
+article#lesson-content {
+  margin: auto;
+  max-width: 1100px;
+}
+
+h1#lesson-title {
+  padding: 10px;
+}
+
+.back-menu-btn {
+  text-decoration: none;
+  background-color: #0a3981;
+  border: none;
+  padding: 10px;
+}
+
+.back-menu-btn button:hover {
+  background-color: #00203e;
+}
+
+.back-menu-btn button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+}
+
+.back-menu-btn button a:hover {
+  text-decoration: underline;
+}

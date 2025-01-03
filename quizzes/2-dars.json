@@ -19,11 +19,11 @@
       },
       {
         "type": "image",
-        "value": "https://upload.wikimedia.org/wikipedia/commons/a/a4/HTML5_logo_and_wordmark.svg"
+        "value": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
       },
       {
         "type": "image",
-        "value": "https://upload.wikimedia.org/wikipedia/commons/6/63/JavaScript-logo.png"
+        "value": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
       },
       { "type": "text", "value": "Ruby" }
     ],
@@ -40,7 +40,7 @@
     "options": [
       {
         "type": "image",
-        "value": "https://upload.wikimedia.org/wikipedia/commons/a/a4/HTML5_logo_and_wordmark.svg"
+        "value": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
       },
       {
         "type": "image",
@@ -52,7 +52,7 @@
       },
       { "type": "text", "value": "Swift" }
     ],
-    "answer": "https://upload.wikimedia.org/wikipedia/commons/a/a4/HTML5_logo_and_wordmark.svg"
+    "answer": "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
   },
   {
     "question": "Quyidagilardan qaysi biri ma'lumotlar bazasi turi?",
@@ -64,7 +64,7 @@
     "options": [
       {
         "type": "image",
-        "value": "https://upload.wikimedia.org/wikipedia/commons/4/47/Java_logo_icon.png"
+        "value": "https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg"
       },
       {
         "type": "image",
@@ -97,11 +97,11 @@
       },
       {
         "type": "image",
-        "value": "https://upload.wikimedia.org/wikipedia/commons/7/72/Vue.js_Logo_2.svg"
+        "value": "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg"
       },
       {
         "type": "image",
-        "value": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Angular_logo.svg"
+        "value": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg"
       },
       { "type": "text", "value": "Flutter" }
     ],

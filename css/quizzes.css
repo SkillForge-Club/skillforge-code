@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  line-height: 1.1;
+  transition: all ease 300ms;
+}
+
+/* Page Title */
+.tests-page-title h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #0a3981;
+}
+
+.tests-quiz-title {
+  font-size: 2.5rem;
+}
+
+/* Courses Section */
+.tests-course-container {
+  display: flex;
+  align-items: center;
+  background-color: #0a3981;
+  color: white;
+  padding: 40px 20px;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.tests-course-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tests-course-box {
+  background-color: #fff;
+  color: #002d57;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+}
+
+.tests-course-box h2 {
+  margin-bottom: 10px;
+}
+
+.tests-lesson-content button {
+  background-color: #002d57;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 5px 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.tests-lesson-content button:hover {
+  background-color: #00203e;
+}
+
+.tests-lesson-content a {
+  text-decoration: none;
+  color: white;
+}
+
+.tests-lesson-content a:hover {
+  text-decoration: underline;
+}
