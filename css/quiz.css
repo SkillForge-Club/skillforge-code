@@ -1,3 +1,4 @@
+
 .quiz-link {
   text-decoration: none;
   color: #fff;
@@ -36,7 +37,7 @@ div.quiz-div {
 #quiz-title {
   text-align: center;
   font-size: 2.5rem;
-  margin: 20px 0;
+  color: #0a3981;border-top: 2px solid #0a3981;
 }
 
 #start-menu {
@@ -45,10 +46,13 @@ div.quiz-div {
   align-items: center;
   text-align: center;
   padding: 20px;
+  max-width: 1000px;
+  margin: auto;
   background-color: #eaf4ff;
   border: 2px solid #0a3981;
   border-radius: 0px;
   box-shadow: 0 4px 6px rgba(10, 57, 129, 0.2);
+  height: 60vh;
 }
 
 #start-menu h2 {

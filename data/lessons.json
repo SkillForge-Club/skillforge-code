@@ -2,15 +2,15 @@
   {
     "id": "1-dars",
     "course": "course1",
-    "title": "Dars 1: JavaScriptda o'zgaruvchilar",
-    "description": "JavaScriptda o'zgaruvchilar haqida o'rganing.",
+    "title": "1-Dars : Dars Mavzu Nomi",
+    "description": "Tavsif.",
     "file": "/lessons/1-dars.md"
   },
   {
     "id": "2-dars",
     "course": "course1",
-    "title": "JavaScriptda funksiyalar",
-    "description": "Funksiyalarni o'rganing va ularni qanday ishlatishni bilib oling.",
+    "title": "2-Dars: Dars Mavzu Nomi",
+    "description": "TAvsif.",
     "file": "/lessons/2-dars.md"
   }
 ]

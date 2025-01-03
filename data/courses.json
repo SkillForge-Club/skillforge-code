@@ -1,20 +1,20 @@
 [
   {
     "id": "course1",
-    "title": "Frontend Development",
-    "description": "Learn the basics of frontend developmentLearn the basics of frontend development.",
+    "title": "Kurs nomi",
+    "description": "Qisqagina tavsif.",
     "units": [
       {
         "id": "1-1",
-        "title": "Unit: HTML Basics",
-        "description": "Introduction to HTMLIntroduction to HTMLIntroduction to HTML.",
+        "title": "Bo'lim: Bo'lim bomi",
+        "description": "Tavsif.",
         "lessons": ["1-dars", "2-dars", "2-dars"]
       },
       {
         "id": "1-2",
-        "title": "CSS Fundamentals",
-        "description": "Styling with CSS.",
-        "lessons": ["3-dars", "4"]
+        "title": "Bo'lim: Bo'lim bomi",
+        "description": "Tavsif.",
+        "lessons": ["1-dars", "2-dars", "2-dars"]
       }
     ]
   }

@@ -1,52 +1,64 @@
-/* Page Title */
-.tests-page-title h1 {
-  text-align: center;
-  margin: 20px 0;
-  color: #0a3981;
-}
-
 .tests-quiz-title {
-  font-size: 2.5rem;
-}
-
-/* Courses Section */
-.tests-course-container {
-  display: flex;
-  align-items: center;
-  background-color: #0a3981;
-  color: white;
-  padding: 40px 20px;
-  flex-direction: column;
-  max-width: 1100px;
+  color: #0a3981;
+  text-align: center;
   margin: auto;
 }
 
-.tests-course-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+/* General Layout */
+.tests-main {
+  padding: 20px;
 }
 
+.tests-course-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Course Box */
 .tests-course-box {
-  background-color: #fff;
-  color: #002d57;
+  background-color: #0a3981;
+  color: white;
   padding: 20px;
-  width: 300px;
-  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tests-course-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Unit Box */
+.tests-unit {
+  background-color: #ffffff;
+  color: #0a3981;
+  margin-top: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tests-unit h3 {
   margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #0a3981;
+}
+
+/* Lessons / Tests */
+.tests-lesson-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .tests-lesson-content button {
-  background-color: #002d57;
+  background-color: #0a3981;
   color: white;
   padding: 10px;
   border: none;
-  margin: 5px 0;
-  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
   font-size: 0.9rem;
 }
 
@@ -57,8 +69,34 @@
 .tests-lesson-content a {
   text-decoration: none;
   color: white;
+  font-weight: 600;
 }
 
 .tests-lesson-content a:hover {
   text-decoration: underline;
+}
+
+/* Style for the Info Note Section */
+.important-note {
+  background-color: #d1ecf1; /* Light blue background */
+  color: #0c5460; /* Dark blue text */
+  border: 1px solid #bee5eb; /* Light blue border */
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+
+}
+
+.important-note strong {
+  font-weight: 700;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .tests-course-box {
+    width: 100%;
+  }
 }

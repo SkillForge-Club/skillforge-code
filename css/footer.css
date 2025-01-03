@@ -1,6 +1,7 @@
 /* Footer Styles */
 .footer {
-  background-color: #002d57;
+  border-top: 3px solid white;
+  background-color: #09316c;
   color: #fff;
   text-align: center;
   padding: 30px 15px;

@@ -1,5 +1,6 @@
 /* General Course Page Styling */
 #course-title {
+  color: #0a3981;
   padding: 10px;
   text-align: center;
 }
@@ -14,7 +15,7 @@ header h1 {
   padding: 20px;
   border: 3px solid #0a3981;
   margin-bottom: 10px;
-  background-color: #00203e; /* Matching background color */
+  background-color: #082e66; /* Matching background color */
   color: white; /* White text for readability */
   font-size: 1.3rem; /* Adjusted for better readability */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
@@ -35,7 +36,7 @@ header h1 {
 /* Individual Unit Styling */
 .unit {
   border: 3px solid #0a3981;
-  background-color: #00203e;
+  background-color: #082e66;
   padding: 15px;
   color: white;
 }
@@ -70,6 +71,7 @@ header h1 {
   border: 2px solid #0a3981;
   background-color: #0a3981;
   padding: 15px;
+  border: 2px solid white;
   color: white;
 }
 
@@ -96,7 +98,7 @@ header h1 {
 
 .lesson button:hover {
   color: #002d57;
-  background-color: #d1d1d1;
+  background-color: #051b3d;
 }
 
 .lesson button a {
