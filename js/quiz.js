@@ -10,9 +10,10 @@ const startButton = document.getElementById("start-button");
 const questionCount = document.getElementById("question-count");
 
 let currentQuestionIndex = 0;
-let quizData = [];
 let userAnswers = [];
-let incorrectAttempts = [];
+let quizData = []; // Initialize the quizData
+let incorrectAttempts = Array(5).fill(0); // Initialize incorrect attempts array for 5 questions
+
 let score = 0;
 
 let notifications = document.createElement("div");
@@ -20,7 +21,7 @@ notifications.className = "notifications";
 document.body.appendChild(notifications);
 
 async function renderStartMenu(quizId) {
-  quizData = await fetchQuiz(quizId);
+  quizData = await fetchQuiz(quizId); // Fetch quiz data asynchronously
   if (!quizData) {
     quizTitle.textContent = "Test topilmadi";
     startMenu.innerHTML = "<p>Kechirasiz, siz izlayotgan testingiz topilmadi.</p>";
@@ -29,6 +30,16 @@ async function renderStartMenu(quizId) {
 
   quizTitle.textContent = `Test: ${quizId}`;
   questionCount.textContent = `Ushbu testda ${quizData.length} ta savol mavjud.`;
+
+  // Create progress dots based on number of questions
+  const progressBar = document.getElementById("progress-bar");
+  progressBar.innerHTML = "";
+  for (let i = 0; i < quizData.length; i++) {
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+    progressBar.appendChild(dot);
+  }
+
   startMenu.style.display = "block";
 }
 
@@ -51,7 +62,7 @@ async function fetchQuiz(quizId) {
 }
 
 function renderQuestion(index) {
-  const question = quizData[index];
+  const question = quizData[index]; // Access quizData after it's loaded
   quizContainer.innerHTML = "";
 
   const questionDiv = document.createElement("div");
@@ -127,8 +138,10 @@ function handleCheck() {
 
   const userAnswer = selected.value;
   const correctAnswer = quizData[currentQuestionIndex].answer;
+  const progressDots = document.querySelectorAll(".progress-bar .dot");
 
   if (userAnswer === correctAnswer) {
+    // Correct answer logic
     if (!incorrectAttempts[currentQuestionIndex]) {
       score++;
       showNotification("To'g'ri! 🎉", "success");
@@ -138,16 +151,29 @@ function handleCheck() {
     }
 
     userAnswers[currentQuestionIndex] = userAnswer;
+
+    // Disable all options
     document.querySelectorAll(`input[name="q${currentQuestionIndex}"]`).forEach((input) => (input.disabled = true));
 
-    // Show all explanations for the current question
-    document.querySelectorAll(`.explanation`).forEach((el) => el.classList.add("visible"));
+    // Show all explanations for all options after the correct answer
+    document.querySelectorAll(`.explanation`).forEach((explanation) => {
+      explanation.classList.add("visible");
+    });
+
+    // Update the dot to green for correct answer
+    progressDots[currentQuestionIndex].classList.add("correct");
 
     checkButton.textContent = "Keyingi";
   } else {
+    // Incorrect answer logic
+    incorrectAttempts[currentQuestionIndex]++;
     showNotification("Noto'g'ri, qayta urinib ko'ring!", "error");
     playSound("wrong");
-    incorrectAttempts[currentQuestionIndex] = true;
+
+    // Update the dot to blue for incorrect answer
+    progressDots[currentQuestionIndex].classList.add("incorrect");
+
+    // No explanations are revealed for incorrect attempts
   }
 }
 

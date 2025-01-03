@@ -142,7 +142,7 @@ div.quiz-div {
   align-items: center;
   gap: 10px;
   padding: 10px;
-  border-bottom: 2px solid white;
+  border-top: 2px solid white;
   border-radius: 0px;
   background-color: #0a3981;
   cursor: pointer;
@@ -234,12 +234,9 @@ input[type="radio"]:checked {
 
 .explanation {
   font-size: 1rem;
-  color: #0056b3;
-  margin-left: 40px;
-  margin-top: 5px;
-  background: #f0f8ff;
+  color: white;
+  background: #00203e;
   padding: 5px;
-  border-left: 4px solid #0a3981;
   display: none;
 }
 
@@ -268,5 +265,5 @@ input[type="radio"]:checked {
 }
 
 .progress-bar .dot.incorrect {
-  background-color: blue;
+  background-color: #2196f3;
 }
