@@ -235,7 +235,8 @@ input[type="radio"]:checked {
 .explanation {
   font-size: 1rem;
   color: white;
-  background: #00203e;
+  background: 
+  #00203e;
   padding: 5px;
   display: none;
 }
