@@ -1,51 +1,70 @@
 #course-container {
+  height: 63vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: center; /* Center content horizontally */
   background-color: #0a3981; /* Deep blue background */
   color: white;
   padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  gap: 10px; /* Reduced gap for a tighter layout */
+  overflow-y: auto; /* Allows scrolling if content overflows */
   text-align: center;
-  flex-direction: column;
-  gap: 20px;
-  flex-wrap: nowrap;
 }
 
 .course-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Ensures items wrap when necessary */
+  gap: 10px; /* Reduced gap between courses */
+  justify-content: center; /* Center items in container */
   width: 100%;
+  max-width: 1200px; /* Prevent courses from stretching too wide */
 }
 
 .course-container {
   background-color: #fff;
   color: #002d57;
   border: 1px solid black;
-  max-width: 1000px;
+  width: 300px; /* Fixed width for all courses */
+  height: 300px; /* Fixed height for uniformity */
   margin: auto;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .course-container h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 .course-container p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.4;
   margin-bottom: 15px;
+  flex-grow: 1; /* Allows the description to take up extra space */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
 }
 
 .course-container button {
   text-decoration: none;
   color: white;
   background-color: #0a3981;
-  padding: 10px 20px;
+  padding: 8px 15px;
   border: none;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  align-self: center; /* Center button horizontally */
 }
 
 .course-container button:hover {
@@ -69,19 +88,21 @@
   }
 
   .course-container {
-    padding: 15px;
+    padding: 10px;
+    width: 220px; /* Reduce width for smaller screens */
+    height: 280px; /* Adjust height for smaller screens */
   }
 
   .course-container h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .course-container p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .course-container button {
-    padding: 8px 15px;
-    font-size: 0.9rem;
+    padding: 6px 12px;
+    font-size: 0.8rem;
   }
 }

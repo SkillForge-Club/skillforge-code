@@ -3,8 +3,7 @@
 .hero {
   position: relative;
   height: calc(100vh - 100px);
-  background: url("https://st4.depositphotos.com/1441511/20464/i/450/depositphotos_204649936-stock-photo-programmers-working-software-office-team.jpg")
-    center/cover no-repeat;
+  background: url("https://st4.depositphotos.com/1441511/20464/i/450/depositphotos_204649936-stock-photo-programmers-working-software-office-team.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,4 +183,14 @@
 .teacher-card p {
   font-size: 1rem;
   color: #333;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
 }
