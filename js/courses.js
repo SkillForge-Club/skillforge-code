@@ -5,11 +5,15 @@ fetch("/data/courses.json")
     courses.forEach((course) => {
       const courseElement = document.createElement("div");
       courseElement.classList.add("course-container");
+
       courseElement.innerHTML = `
         <h2>${course.title}</h2>
         <p>${course.description}</p>
-        <button><a href="/course.html?id=${course.id}">Kursni ko'rish</a></button>
+        <button>
+          <a href="/course.html?id=${course.id}">Kursni ko'rish</a>
+        </button>
       `;
+
       container.appendChild(courseElement);
     });
   });

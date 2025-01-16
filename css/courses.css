@@ -1,80 +1,100 @@
 #course-container {
   height: 63vh;
   display: flex;
-  align-items: flex-start; /* Align items to the top */
-  justify-content: center; /* Center content horizontally */
-  background-color: #0a3981; /* Deep blue background */
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #0a3981;
   color: white;
   padding: 20px;
-  flex-wrap: wrap; /* Allow wrapping of items */
-  gap: 10px; /* Reduced gap for a tighter layout */
-  overflow-y: auto; /* Allows scrolling if content overflows */
+  flex-wrap: wrap;
+  gap: 15px;
+  overflow-y: auto;
   text-align: center;
 }
 
 .course-content {
   display: flex;
-  flex-wrap: wrap; /* Ensures items wrap when necessary */
-  gap: 10px; /* Reduced gap between courses */
-  justify-content: center; /* Center items in container */
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
   width: 100%;
-  max-width: 1200px; /* Prevent courses from stretching too wide */
+  max-width: 1200px;
 }
 
 .course-container {
-  background-color: #fff;
-  color: #002d57;
-  border: 1px solid black;
-  width: 300px; /* Fixed width for all courses */
-  height: 300px; /* Fixed height for uniformity */
-  margin: auto;
+  background: linear-gradient(to top, #082c63, transparent);
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 300px; /* Fixed height */
   padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
+  justify-content: flex-end; /* Align content to the bottom */
 }
 
 .course-container h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap; /* Prevent wrapping */
+  white-space: nowrap;
+  color: white; /* Title text is white */
 }
 
 .course-container p {
-  font-size: 0.9rem;
-  line-height: 1.4;
-  margin-bottom: 15px;
-  flex-grow: 1; /* Allows the description to take up extra space */
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  flex-grow: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  color: white; /* Description text is white */
+}
+
+.course-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%; /* Height of the gradient */
+  background: linear-gradient(to top, rgb(8, 47, 105), rgba(1, 15, 36, 0));
+  pointer-events: none; /* Gradient doesn't block interactions */
 }
 
 .course-container button {
+  z-index: 2;
   text-decoration: none;
   color: white;
-  background-color: #0a3981;
-  padding: 8px 15px;
+  background-color: #002d57;
+  padding: 10px;
   border: none;
+  border-radius: 0; /* Sharp borders for the button */
+  font-size: 1rem;
+  font-weight: bold;
   cursor: pointer;
-  font-size: 0.9rem;
-  align-self: center; /* Center button horizontally */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Make button span most of the card */
+  transition: background-color 0.3s ease;
 }
 
 .course-container button:hover {
-  color: #002d57;
-  background-color: #00203e;
+  background-color: #001f3b;
 }
 
 .course-container a {
   text-decoration: none;
-  color: #fff;
-  font-weight: 800;
+  color: white;
 }
 
 .course-container a:hover {
@@ -87,21 +107,21 @@
   }
 
   .course-container {
+    width: 220px;
+    height: 280px;
     padding: 10px;
-    width: 220px; /* Reduce width for smaller screens */
-    height: 280px; /* Adjust height for smaller screens */
   }
 
   .course-container h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .course-container p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .course-container button {
-    padding: 6px 12px;
-    font-size: 0.8rem;
+    padding: 8px;
+    font-size: 0.85rem;
   }
 }

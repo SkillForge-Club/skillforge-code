@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Course title",
+    "description": "Description.",
+    "units": [
+      {
+        "id": "1-1",
+        "title": "Unit: Title",
+        "description": "Kursning asosiy bo‘limlariga o‘tishdan oldin bilish zarur bo‘lgan bilim va ko‘nikmalar.",
+        "quizes": [
+          {
+            "title": "Text on button for the quiz page such as Quiz 1",
+            "url": "http://127.0.0.1:5501/quiz.html?quiz=1-dars"
+          },
+          {
+            "title": "Text on button for the quiz page such as Quiz 2",
+            "url": "http://127.0.0.1:5501/quiz.html?quiz=1-dars"
+          }
+        ]
+      }
+    ]
+  }
+]
