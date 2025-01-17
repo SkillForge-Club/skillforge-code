@@ -1,4 +1,4 @@
-fetch("/data/courses.json")
+fetch("/data/course-quizzes.json")
   .then((response) => response.json())
   .then((courses) => {
     const container = document.querySelector(".tests-content");

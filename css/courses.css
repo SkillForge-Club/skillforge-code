@@ -3,7 +3,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-color: #0a3981;
   color: white;
   padding: 20px;
   flex-wrap: wrap;
@@ -22,7 +21,7 @@
 }
 
 .course-container {
-  background: linear-gradient(to top, #082c63, transparent);
+  background: linear-gradient(to top, #082c63, #082c63);
   border: 1px solid #ddd;
   width: 300px;
   height: 300px; /* Fixed height */
@@ -86,6 +85,7 @@
   transform: translateX(-50%);
   width: 90%; /* Make button span most of the card */
   transition: background-color 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .course-container button:hover {

@@ -5,60 +5,105 @@
 }
 
 .tests-page-title {
-  background-color: #082e66;
   color: white;
   text-align: center;
-  padding: 20px;
-}
-
-.tests-main {
-  padding: 20px;
 }
 
 /* Course Cards */
-.tests-course-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.tests-continer {
-  border: 3px solid #0a3981;
-  background-color: #082e66;
-  color: white;
-  width: 280px;
+.tests-content {
+  max-width: 1200px;
+  margin: 0 auto; /* Centering the content */
   padding: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: left;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.tests-continer h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.tests-continer p {
-  margin: 10px 0 20px;
-  font-size: 0.9rem;
-}
-
-.tests-continer button {
-  background-color: #002d57;
+  align-items: flex-start;
+  justify-content: center;
   color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
+  flex-wrap: wrap;
+  gap: 15px;
+  overflow-y: auto;
   text-align: center;
 }
 
-.tests-continer button:hover {
-  background-color: #051b3d;
+.tests-continer {
+  background: linear-gradient(to top, #082c63, #082c63);
+  border: 1px solid #ddd;
+  width: 300px;
+  height: 300px; /* Fixed height */
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
 }
 
+.tests-continer h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: white; /* Title text is white */
+}
+
+.tests-continer p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  color: white; /* Description text is white */
+}
+
+.tests-continer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%; /* Adjusted height of the gradient */
+  background: linear-gradient(to top, rgb(8, 47, 105), rgba(1, 15, 36, 0));
+  pointer-events: none; /* Gradient doesn't block interactions */
+}
+
+.tests-continer button {
+  z-index: 2;
+  text-decoration: none;
+  color: white;
+  background-color: #002d57;
+  padding: 10px;
+  border: none;
+  border-radius: 0; /* Sharp borders for the button */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* Make button span most of the card */
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.tests-continer button:hover {
+  background-color: #001f3b;
+}
+
+.tests-continer a {
+  text-decoration: none;
+  color: white;
+}
+
+.tests-continer a:hover {
+  text-decoration: underline;
+}
 
 /* Style for the Info Note Section */
 .important-note {
@@ -66,12 +111,12 @@
   color: #0c5460; /* Dark blue text */
   border: 1px solid #bee5eb; /* Light blue border */
   padding: 15px;
-  margin: 20px 0;
+  margin: 20px auto; /* Centered horizontally */
   border-radius: 5px;
   font-size: 16px;
   font-weight: 400;
+  max-width: 800px; /* Avoid full-width stretching */
   text-align: center;
-
 }
 
 .important-note strong {
@@ -81,6 +126,26 @@
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .tests-continer {
-    width: 100%;
+    width: 220px;
+    height: 280px;
+    padding: 10px;
+  }
+
+  .tests-continer h2 {
+    font-size: 1.5rem;
+  }
+
+  .tests-continer p {
+    font-size: 0.85rem;
+  }
+
+  .tests-continer button {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .important-note {
+    font-size: 14px;
+    padding: 10px;
   }
 }
