@@ -1,0 +1,112 @@
+/* General Course Page Styling */
+#course-title {
+  color: #0a3981;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+}
+
+#course-description {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  border: 3px solid #0a3981;
+  margin-bottom: 10px;
+  background-color: #082e66; /* Matching background color */
+  color: white; /* White text for readability */
+  font-size: 1.3rem; /* Adjusted for better readability */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-align: left; /* Center the text for emphasis */
+  border-radius: 0; /* No rounded corners, consistent with the theme */
+}
+
+/* Units Container */
+#quiz-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin-bottom: 20px;
+}
+
+/* Individual Unit Styling */
+.unit {
+  border: 3px solid #0a3981;
+  background-color: #082e66;
+  padding: 15px;
+  color: white;
+}
+
+/* Unit Header */
+.unit-header {
+  margin-bottom: 15px;
+}
+
+.unit-header h2 {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+
+.unit-header p {
+  color: #d1d1d1;
+  font-size: 14px;
+  margin: 5px 0 0;
+}
+
+/* Lessons Container within Units */
+.unit-quiz {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Individual Lesson Styling */
+.quiz {
+  flex: 1 1 calc(50% - 20px); /* 2 lessons per row */
+  border: 2px solid #0a3981;
+  background-color: #0a3981;
+  padding: 15px;
+  border: 2px solid white;
+  color: white;
+}
+
+.quiz h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.quiz p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #e0e0e0;
+}
+
+.quiz button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #002d57;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.quiz button:hover {
+  color: #002d57;
+  background-color: #051b3d;
+}
+
+.quiz button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 800;
+}
+
+.quiz button a:hover {
+  text-decoration: underline;
+}

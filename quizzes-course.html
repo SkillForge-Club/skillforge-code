@@ -21,11 +21,11 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/quizzes.css" />
+    <link rel="stylesheet" href="css/quizzes-course.css" />
 
     <!-- JS -->
     <script src="/js/toggleMenu.js" async></script>
-    <script src="js/quizzes.js"></script>
+    <script src="/js/quizzes-course.js"></script>
   </head>
   <body>
     <header class="header">
@@ -48,22 +48,12 @@
       </div>
     </header>
 
-    <!-- Page Title -->
-    <div class="tests-page-title">
-      <h1 class="tests-quiz-title">Testlar</h1>
+    <div class="title">
+      <h1 id="course-title">Kurs nomi</h1>
     </div>
-
-    <main class="tests-main">
-      <section class="important-note">
-        <p>
-          <strong>Eslatma:</strong>
-          Testni bir necha marta qayta ishlasangiz, yangi savollarni topishingiz mumkin.
-        </p>
-      </section>
-      <!-- Courses Container -->
-      <section class="tests-content">
-        <!-- Cards will be dynamically injected here -->
-      </section>
+    <section id="course-description"></section>
+    <main class="course-main">
+      <section id="quiz-container"></section>
     </main>
 
     <!-- Footer -->
