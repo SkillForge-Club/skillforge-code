@@ -10,7 +10,7 @@ fetch("/data/courses.json")
         <h2>${course.title}</h2>
         <p>${course.description}</p>
         <button>
-          <a href="/quizzes-course.html?id=${course.id}">Kursga oid testlarni ko'rish</a>
+          <a href="/course-quizzes.html?id=${course.id}">Kursga oid testlarni ko'rish</a>
         </button>
       `;
 

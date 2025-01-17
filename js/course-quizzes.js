@@ -1,4 +1,4 @@
-fetch("/data/quizzes.json")
+fetch("/data/course-quizzes.json")
   .then((response) => response.json())
   .then((courses) => {
     const urlParams = new URLSearchParams(window.location.search);
