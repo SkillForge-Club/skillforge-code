@@ -1,42 +1,49 @@
 [
   {
     "id": "course1",
+    "title": "Kirish",
+    "description": "Kursning mazmuni, uni kim olib borishi va {i}Code veb-sayti haqida qisqacha tanishuv.",
+    "units": [
+      {
+        "id": "1-1",
+        "title": "Kirish",
+        "description": "",
+        "lessons": ["kirish"]
+      }
+    ]
+  },
+  {
+    "id": "course2",
     "title": "Asoslar Kursi",
     "description": "Hammasi shu yerda boshlanadi! Haqiqiy, ishlaydigan veb-saytlarni yaratish uchun zarur bo'lgan barcha muhim asboblarga amaliy kirish. Bu bilimlar keyingi kurslar uchun zarur bo'lgan asoslarni shakllantirib, texnologiyalar dunyosida sizni muvaffaqiyatli yo'lga boshlaydi.",
     "units": [
       {
         "id": "1-1",
-        "title": "Bo'lim: Dastlabki talablar",
+        "title": "1-Bo'lim: Dastlabki talablar",
         "description": "Kursning asosiy bo‘limlariga o‘tishdan oldin bilish zarur bo‘lgan bilim va ko‘nikmalar.",
-        "lessons": ["1-dars"]
-      },
-      {
-        "id": "1-2",
-        "title": "Bo'lim: Git Asoslari",
-        "description": "Versiya boshqaruv tizimi Git bilan ishlashning asosiy tushunchalari va amaliy qo‘llanmalari.",
         "lessons": []
       },
       {
-        "id": "1-3",
-        "title": "Bo'lim: HTML Asoslari",
+        "id": "1-2",
+        "title": "2-Bo'lim: HTML Asoslari",
         "description": "Veb-sahifalarning tuzilishini yaratish uchun ishlatiladigan HTML belgilash tili va uning asosiy elementlari.",
         "lessons": []
       },
       {
-        "id": "1-4",
-        "title": "Bo'lim: CSS Asoslari",
+        "id": "1-3",
+        "title": "3-Bo'lim: CSS Asoslari",
         "description": "Veb-sahifalarning dizayni va ko‘rinishini boshqarish uchun CSSning asosiy qoidalari va usullari.",
         "lessons": []
       },
       {
-        "id": "1-5",
-        "title": "Bo'lim: CSS Flexbox",
+        "id": "1-4",
+        "title": "4-Bo'lim: CSS Flexbox",
         "description": "Flexbox modeli yordamida moslashuvchan va chiroyli tartiblarni yaratish.",
         "lessons": []
       },
       {
-        "id": "1-6",
-        "title": "Bo'lim: JavaScript Asoslari",
+        "id": "1-5",
+        "title": "5-Bo'lim: JavaScript Asoslari",
         "description": "Dinamik veb-sahifalar yaratish uchun JavaScript dasturlash tili va uning asosiy funksiyalari.",
         "lessons": []
       }

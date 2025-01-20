@@ -68,7 +68,7 @@ function renderQuestion(index) {
   const questionDiv = document.createElement("div");
   questionDiv.classList.add("quiz-question");
 
-  let questionContent = `<h3>Savol ${index + 1}: ${question.question}</h3>`;
+  let questionContent = `<h3>${index + 1}-savol: ${question.question}</h3>`;
   if (question.image) {
     questionContent += `<img src="${question.image}" alt="Savol rasmi" class="question-image">`;
   }

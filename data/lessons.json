@@ -1,16 +1,9 @@
 [
   {
-    "id": "1-dars",
+    "id": "kirish",
     "course": "course1",
-    "title": "1-Dars : Dars Mavzu Nomi",
-    "description": "Tavsif.",
-    "file": "/lessons/1-dars.md"
-  },
-  {
-    "id": "2-dars",
-    "course": "course1",
-    "title": "2-Dars: Dars Mavzu Nomi",
-    "description": "TAvsif.",
-    "file": "/lessons/2-dars.md"
+    "title": "{i}Code Proyektiga Kirish",
+    "description": "Ushbu darsda siz {i}Code haqida umumiy ma'lumot olasiz.",
+    "file": "/lessons/Kirish/kirish.md"
   }
 ]

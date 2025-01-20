@@ -85,7 +85,6 @@
   transform: translateX(-50%);
   width: 90%; /* Make button span most of the card */
   transition: background-color 0.3s ease;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .course-container button:hover {

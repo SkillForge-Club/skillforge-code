@@ -42,6 +42,24 @@
   --code-bg-color: #2d2d2d; /* Darker background for code blocks */
   --code-border-color: #115dce;
 }
+
+body {
+  background-color: var(--background-color);
+}
+
+.footer {
+  border-top: 3px solid var(--background-color);
+}
+
+#lesson-title {
+  padding: 10px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+  color: var(--text-color);
+  font-size: 3rem;
+}
+
 #lesson-content {
   background-color: var(--background-color);
   color: var(--text-color);

@@ -1,0 +1,90 @@
+[
+  {
+    "question": "Qaysi funksional imkoniyat kechasi o‘qish uchun qulaylik yaratadi?",
+    "image": "/images/quiz-images/Kirish/dark-theme.png",
+    "options": [
+      { "type": "text", "value": "Qorong‘i mavzu qo‘llab-quvvatlashi" },
+      { "type": "text", "value": "Katta shrift o‘lchami" },
+      { "type": "text", "value": "Animatsion grafikalar" },
+      { "type": "text", "value": "Ovozli yordamchi" }
+    ],
+    "answer": "Qorong‘i mavzu qo‘llab-quvvatlashi",
+    "explanations": {
+      "Qorong‘i mavzu qo‘llab-quvvatlashi": "Bu funksional imkoniyat kechasi o‘qish uchun qulaylik yaratadi.",
+      "Katta shrift o‘lchami": "Katta shrift o‘lchami foydalidir, ammo savol bu haqda emas.",
+      "Animatsion grafikalar": "Animatsion grafikalar kechasi o‘qish uchun yordam bermaydi.",
+      "Ovozli yordamchi": "Ovozli yordamchi boshqa holatlar uchun foydali bo‘lishi mumkin, lekin savolga mos emas."
+    }
+  },
+  {
+    "question": "Saytning qaysi bo‘limida kurslarni topishingiz mumkin?",
+    "options": [
+      { "type": "text", "value": "Kurslar" },
+      { "type": "text", "value": "Testlar" },
+      { "type": "text", "value": "Bosh menuga" },
+      { "type": "text", "value": "Profil" }
+    ],
+    "answer": "Kurslar",
+    "explanations": {
+      "Kurslar": "Bu bo‘limda barcha kurslar mavjud.",
+      "Testlar": "Bu bo‘lim testlar uchun mo‘ljallangan.",
+      "Bosh menuga": "Uy bo‘limi kurslar ro‘yxatini ko‘rsatmaydi.",
+      "Profil": "Profil bo‘limida foydalanuvchi ma’lumotlari saqlanadi."
+    }
+  },
+  {
+    "question": "Testlarni qayta yechishning qanday foydasi bor?",
+    "options": ["Yangi savollarni ko‘rishingiz mumkin.", "Sayt algoritmini sinab ko‘rishingiz mumkin.", "Darslarni o‘tish vaqti qisqaradi.", "O‘qish rejimiga o‘tish imkoniyati beriladi."],
+    "answer": "Yangi savollarni ko‘rishingiz mumkin.",
+    "explanations": {
+      "Yangi savollarni ko‘rishingiz mumkin.": "Bu qayta test yechishning asosiy foydasidir.",
+      "Sayt algoritmini sinab ko‘rishingiz mumkin.": "Bu noto‘g‘ri, chunki test algoritmni sinash uchun emas.",
+      "Darslarni o‘tish vaqti qisqaradi.": "Dars vaqti testlarni yechish bilan bog‘liq emas.",
+      "O‘qish rejimiga o‘tish imkoniyati beriladi.": "O‘qish rejimi testlarga tegishli emas."
+    }
+  },
+  {
+    "question": "Saytning qaysi bo‘limida testlarni topishingiz mumkin?",
+    "options": ["Kurslar", "Testlar", "Uy sahifasi", "Profil sahifasi"],
+    "answer": "Testlar",
+    "explanations": {
+      "Kurslar": "Bu bo‘lim kurslar uchun mo‘ljallangan.",
+      "Testlar": "Testlarni aynan shu bo‘limdan topasiz.",
+      "Uy sahifasi": "Uy sahifasida umumiy ma’lumotlar ko‘rsatiladi.",
+      "Profil sahifasi": "Profil sahifasi foydalanuvchi ma’lumotlari uchun mo‘ljallangan."
+    }
+  },
+  {
+    "question": "Saytimizda testlarning qanday o‘ziga xosligi mavjud?",
+    "options": ["Notog‘ri javoblarga tushuntirish beriladi.", "Savollar har doim bir xil bo‘ladi.", "Faqat bitta test mavjud.", "Testlar faqat grafik elementlardan iborat."],
+    "answer": "Notog‘ri javoblarga tushuntirish beriladi.",
+    "explanations": {
+      "Notog‘ri javoblarga tushuntirish beriladi.": "Bu saytimizning asosiy afzalliklaridan biridir.",
+      "Savollar har doim bir xil bo‘ladi.": "Bu noto‘g‘ri, savollar har xil ketma-ketlikda chiqadi.",
+      "Faqat bitta test mavjud.": "Saytimizda ko‘plab testlar mavjud(Tez orada).",
+      "Testlar faqat grafik elementlardan iborat.": "Testlar matn va grafik elementlardan birgalikda iborat bo‘lishi mumkin."
+    }
+  },
+  {
+    "question": "Darsda qanday testlar taqdim etiladi?",
+    "options": ["Faqat darsga oid testlar.", "Har qanday umumiy mavzudagi testlar.", "Barcha tarmoqlardagi savollar.", "Dars mavzusiga mos kelmaydigan testlar."],
+    "answer": "Faqat darsga oid testlar.",
+    "explanations": {
+      "Faqat darsga oid testlar.": "Bu testlar mavzuga mos ravishda tanlangan.",
+      "Har qanday umumiy mavzudagi testlar.": "Faqat dars bilan bog‘liq testlar taqdim etiladi.",
+      "Barcha tarmoqlardagi savollar.": "Testlar faqat darsning muayyan mavzusini qamrab oladi.",
+      "Dars mavzusiga mos kelmaydigan testlar.": "Bunday testlar taqdim etilmaydi."
+    }
+  },
+  {
+    "question": "Agar siz noto‘g‘ri javobni tanlasangiz, nima sodir bo‘ladi?",
+    "options": ["Qayta urinib ko‘rish uchun taklif qilinadi.", "To‘g‘ri javob ko‘rsatiladi.", "Qisqacha tushuntirish beriladi.", "Test tugallangan hisoblanadi."],
+    "answer": "Qisqacha tushuntirish beriladi.",
+    "explanations": {
+      "Qayta urinib ko‘rish uchun taklif qilinadi.": "Qayta urinishga ruxsat beriladi, lekin bu savolda tushuntirish haqida so‘ralgan.",
+      "To‘g‘ri javob ko‘rsatiladi.": "Faqat tushuntirish bilan birgalikda ko‘rsatiladi.",
+      "Qisqacha tushuntirish beriladi.": "Bu noto‘g‘ri javoblar bilan ishlash jarayonining asosiy qismidir.",
+      "Test tugallangan hisoblanadi.": "Test qayta urinmasdan tugallanmaydi."
+    }
+  }
+]
