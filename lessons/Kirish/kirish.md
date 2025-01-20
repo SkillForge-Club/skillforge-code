@@ -41,4 +41,7 @@ Har bir test 4-5 ta savoldan iborat bo‘lsa-da, ba’zi holatlarda 6-7 ta savol
 
 Garchi bugungi darsimiz kirish qismiga oid bo‘lsa-da, mavzuga oid birinchi testni yechib ko‘rishingiz mumkin. Bu testlar bizning platformamiz bilan tanishib chiqishda yordam beradi.
 
+
 Shunday qilib, boshlaymizmi? 🎉
+
+### [Maxsus Telgram kanalimizga ulaning. ](https://t.me/icode_club)
