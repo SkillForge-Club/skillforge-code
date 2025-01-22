@@ -27,14 +27,14 @@
         "title": "1-Bo'lim: Dastlabki talablar",
         "description": "Kursning asosiy bo‘limlariga o‘tishdan oldin bilish zarur bo‘lgan bilim va ko‘nikmalarga oid testlar",
         "quizzes": [
-          {
-            "title": "Kompyuterlarni tushunish",
-            "file": "1-dars"
-          },
-          {
-            "title": "Kompyuterlarni tushunish(Qoʻshimcha test)",
-            "file": "1-dars-qoshimcha"
-          }
+          // {
+          //   "title": "Kompyuterlarni tushunish",
+          //   "file": "1-dars"
+          // },
+          // {
+          //   "title": "Kompyuterlarni tushunish(Qoʻshimcha test)",
+          //   "file": "1-dars-qoshimcha"
+          // }
         ]
       }
     ]
