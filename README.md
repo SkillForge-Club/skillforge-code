@@ -1,4 +1,4 @@
-[{i}Code Logo](/images/logo-code.png)
+![{i}Code Logo](/images/logo-code.png)
 
 # SkillForge IT Courses
 
