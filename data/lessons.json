@@ -5,5 +5,12 @@
     "title": "{i}Code Proyektiga Kirish",
     "description": "Ushbu darsda siz {i}Code haqida umumiy ma'lumot olasiz.",
     "file": "/lessons/Kirish/kirish.md"
+  },
+  {
+    "id": "1-dars",
+    "course": "course2",
+    "title": "Kompyuterlarni tushunish",
+    "description": "Ushbu darsda siz kompyuterlarning asosiy qismlari, ularning ishlash prinsiplari, dasturiy va apparat ta'minotlari, shuningdek, operatsion tizimlar va ularning turlari haqida umumiy ma'lumot olasiz.",
+    "file": "/lessons/Asoslar-kursi/1-dars.md"
   }
 ]

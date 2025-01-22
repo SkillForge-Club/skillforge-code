@@ -21,7 +21,7 @@
         "id": "1-1",
         "title": "1-Bo'lim: Dastlabki talablar",
         "description": "Kursning asosiy bo‘limlariga o‘tishdan oldin bilish zarur bo‘lgan bilim va ko‘nikmalar.",
-        "lessons": []
+        "lessons": ["1-dars"]
       },
       {
         "id": "1-2",

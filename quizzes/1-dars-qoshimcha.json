@@ -1,0 +1,114 @@
+[
+  {
+    "question": "Kompyuterlarning asosiy tarkibiy qismlari qaysilar?",
+    "options": [
+      { "type": "text", "value": "Protsessor va sichqoncha" },
+      { "type": "text", "value": "Apparat va dasturiy ta'minot" },
+      { "type": "text", "value": "Monitor va klaviatura" },
+      { "type": "text", "value": "Operatsion tizim va o'yinlar" }
+    ],
+    "answer": "Apparat va dasturiy ta'minot",
+    "explanations": {
+      "Apparat va dasturiy ta'minot": "To'g'ri javob, chunki bu kompyuterning ikki asosiy qismi.",
+      "Monitor va klaviatura": "Bu apparatning qismlari, lekin dasturiy ta'minotni o'z ichiga olmaydi.",
+      "Protsessor va sichqoncha": "Bu apparat qismlari, lekin kompyuterning asosiy tuzilishini tashkil qilmaydi.",
+      "Operatsion tizim va o'yinlar": "Bu dasturiy ta'minotning qismlari, lekin apparatni o'z ichiga olmaydi."
+    }
+  },
+  {
+    "question": "Operatsion tizim nima vazifani bajaradi?",
+    "options": [
+      { "type": "text", "value": "Internetga ulanishni ta'minlaydi" },
+      { "type": "text", "value": "Fayllarni avtomatik ravishda saqlaydi" },
+      { "type": "text", "value": "Kompyuter xotirasini va jarayonlarini boshqaradi" },
+      { "type": "text", "value": "Printer bilan ishlaydi" }
+    ],
+    "answer": "Kompyuter xotirasini va jarayonlarini boshqaradi",
+    "explanations": {
+      "Kompyuter xotirasini va jarayonlarini boshqaradi": "To'g'ri, operatsion tizimning asosiy vazifasi shu.",
+      "Fayllarni avtomatik ravishda saqlaydi": "Bu xususiy vazifa, operatsion tizimning asosiy roli emas.",
+      "Internetga ulanishni ta'minlaydi": "Bu faqat yordamchi funksiyadir.",
+      "Printer bilan ishlaydi": "Bu vazifa operatsion tizim yordamida amalga oshadi, lekin uning asosiy vazifasi emas."
+    }
+  },
+  {
+    "question": "Windwos kim tomonidan ishlab chiqilgan.",
+    "options": [
+      { "type": "text", "value": "Microsoft" },
+      { "type": "text", "value": "Linux Foundation" },
+      { "type": "text", "value": "Google" },
+      { "type": "text", "value": "Apple" }
+    ],
+    "answer": "Microsoft",
+    "explanations": {
+      "Microsoft": "To'g'ri javob, chunki Windows Microsoft tomonidan ishlab chiqilgan.",
+      "Linux Foundation": "Bu noto'g'ri, Linux ochiq manba tizimidir.",
+      "Apple": "Bu noto'g'ri, Apple macOS operatsion tizimini ishlab chiqadi.",
+      "Google": "Bu noto'g'ri, Google Android operatsion tizimini ishlab chiqadi."
+    }
+  },
+  {
+    "question": "Dasturiy ta'minot qanday ko'rsatmalar beradi?",
+    "options": [
+      { "type": "text", "value": "Apparatga nima qilish kerakligini aytadi" },
+      { "type": "text", "value": "Elektron pochta yaratadi" },
+      { "type": "text", "value": "Apparatni ta'mirlashga yordam beradi" },
+      { "type": "text", "value": "Elektr qismlarni boshqaradi" }
+    ],
+    "answer": "Apparatga nima qilish kerakligini aytadi",
+    "explanations": {
+      "Apparatga nima qilish kerakligini aytadi": "To'g'ri, dasturiy ta'minot apparatni boshqaradi.",
+      "Apparatni ta'mirlashga yordam beradi": "Bu noto'g'ri, dasturiy ta'minot apparatni ta'mirlamaydi.",
+      "Elektr qismlarni boshqaradi": "Bu apparatning vazifasi.",
+      "Elektron pochta yaratadi": "Bu dasturiy ta'minotning xususiy funksiyasi, lekin asosiy vazifasi emas."
+    }
+  },
+  {
+    "question": "Apparatga misol keltiring.",
+    "options": [
+      { "type": "text", "value": "Protsessor (CPU)" },
+      { "type": "text", "value": "Google Chrome" },
+      { "type": "text", "value": "Microsoft Word" },
+      { "type": "text", "value": "Adobe Photoshop" }
+    ],
+    "answer": "Protsessor (CPU)",
+    "explanations": {
+      "Protsessor (CPU)": "To'g'ri javob, chunki bu apparat qismidir.",
+      "Google Chrome": "Bu dasturiy ta'minotdir.",
+      "Microsoft Word": "Bu dasturiy ta'minotdir.",
+      "Adobe Photoshop": "Bu dasturiy ta'minotdir."
+    }
+  },
+  {
+    "question": "Operatsion tizim turlari orasida qaysi biri eng keng tarqalgan?",
+    "options": [
+      { "type": "text", "value": "macOS" },
+      { "type": "text", "value": "Linux" },
+      { "type": "text", "value": "Chrome OS" },
+      { "type": "text", "value": "Microsoft Windows" }
+    ],
+    "answer": "Microsoft Windows",
+    "explanations": {
+      "Microsoft Windows": "To'g'ri, chunki u eng mashhur operatsion tizimdir.",
+      "macOS": "Bu keng tarqalgan, lekin Windowsdan kamroq ishlatiladi.",
+      "Linux": "Bu eng mashhur ochiq manba tizim, lekin Windowsdan kamroq ishlatiladi.",
+      "Chrome OS": "Bu faqat Chromebooklarda ishlatiladi, Windowsdan kamroq mashhur."
+    }
+  },
+  {
+    "question": "Operatsion tizim qanday rol o'ynaydi?",
+    "options": [
+      { "type": "text", "value": "Kompyuter va foydalanuvchi o'rtasida tarjimon bo'lib xizmat qiladi" },
+      { "type": "text", "value": "Kompyuterda faqat o'yinlarni boshqaradi" },
+      { "type": "text", "value": "Kompyuter xotirasini ta'mirlaydi" },
+      { "type": "text", "value": "Fayllarni avtomatik ravishda yaratadi" }
+    ],
+    "answer": "Kompyuter va foydalanuvchi o'rtasida tarjimon bo'lib xizmat qiladi",
+    "explanations": {
+      "Kompyuter va foydalanuvchi o'rtasida tarjimon bo'lib xizmat qiladi": "To'g'ri javob, bu operatsion tizimning asosiy vazifasi.",
+      "Kompyuterda faqat o'yinlarni boshqaradi": "Bu noto'g'ri, bu operatsion tizimning cheklangan bir qismidir.",
+      "Kompyuter xotirasini ta'mirlaydi": "Operatsion tizim apparatni ta'mirlamaydi.",
+      "Fayllarni avtomatik ravishda yaratadi": "Bu dasturiy ta'minotning mumkin bo'lgan funksiyasi, lekin operatsion tizimning asosiy vazifasi emas."
+    }
+  }
+]

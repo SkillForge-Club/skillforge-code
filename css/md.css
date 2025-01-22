@@ -110,6 +110,16 @@ body {
   font-size: var(--h6-size);
 }
 
+/* Ensure images match the width of lesson content */
+#lesson-content img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove inline space below images */
+  margin: auto; /* Center images if needed */
+  border-radius: 8px; /* Optional: Add rounded corners for a polished look */
+}
+
+
 /* Paragraphs */
 #lesson-content p {
   margin: var(--margin-base) 0;
