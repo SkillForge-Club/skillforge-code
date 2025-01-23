@@ -1,72 +1,120 @@
 /* Footer Styles */
 .footer {
-  border-top: 3px solid white;
+  border-top: 3px solid #fff;
   background-color: #09316c;
   color: #fff;
   text-align: center;
-  padding: 30px 15px;
+  padding: 20px 10px;
 }
 
 .footer h3 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+  font-size: 1.5em;
+  margin-bottom: 5px;
 }
 
 .footer p {
-  font-size: 1.1em;
-  margin: 10px 0;
-  line-height: 1.6;
+  font-size: 0.9em;
+  margin: 5px 0;
+  line-height: 1.4;
 }
 
-.social-icons {
+.footer-columns {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px 0;
+  justify-content: space-between;
+  margin: 15px 0;
+  flex-wrap: wrap;
+  gap: 10px; /* Reduces gap between columns */
 }
 
-.social-icons a {
+.footer-column {
+  flex: 1 1 calc(33.33% - 10px); /* Ensures columns take up equal space with small gaps */
+  text-align: left;
+  max-width: 300px;
+  padding: 5px; /* Adds internal spacing for neatness */
+}
+
+.footer-column h4 {
+  font-size: 1em;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin: 6px 0; /* Reduces vertical spacing between links */
+}
+
+.footer-column a {
   color: #fff;
-  font-size: 1.5em;
   text-decoration: none;
+  font-size: 0.85em;
+  display: flex;
+  align-items: center;
+  gap: 6px; /* Adjust icon-text spacing */
   transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
+.footer-column a:hover {
   color: #0a3981;
 }
 
 .footer .rights {
-  font-size: 0.9em;
-  margin-top: 15px;
+  font-size: 0.75em;
+  margin-top: 10px;
   font-weight: bold;
+}
+
+/* Icons */
+.footer-column i {
+  font-size: 1em;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .footer h3 {
-    font-size: 1.5em;
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Slightly larger gap for better readability on smaller screens */
   }
 
-  .footer p {
-    font-size: 1em;
+  .footer-column {
+    max-width: 100%;
+    text-align: center; /* Center-align columns for mobile */
   }
 
-  .social-icons a {
-    font-size: 1.3em;
+  .footer-column h4 {
+    font-size: 0.9em;
+  }
+
+  .footer-column a {
+    font-size: 0.8em;
   }
 }
 
 @media (max-width: 480px) {
   .footer h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .footer p {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 
-  .social-icons a {
-    font-size: 1.2em;
+  .footer-column h4 {
+    font-size: 0.8em;
+  }
+
+  .footer-column a {
+    font-size: 0.75em;
+  }
+
+  .footer .rights {
+    font-size: 0.7em;
   }
 }
