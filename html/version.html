@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kurs - {i}Code</title>
+    <title>Veb-sayt versiyasi</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,21 +17,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/version.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/course.css" />
+    <link rel="stylesheet" href="../css/course-quizzes.css" />
 
     <!-- JS -->
-    <script src="/js/toggleMenu.js" async></script>
-    <script src="/js/course.js"></script>
+    <script src="../js/toggleMenu.js" async></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="logo">
-          <img src="images/logo-code.png" alt="Code Logo" />
+          <img src="../images/logo-code.png" alt="Code Logo" />
         </div>
         <nav class="navbar">
           <div class="menu-toggle" onclick="toggleMenu()">
@@ -39,21 +39,42 @@
           </div>
           <div class="links">
             <a href="https://t.me/icode_club">Telegram</a>
-            <a href="courses.html">Kurslar</a>
+            <a href="../courses.html">Kurslar</a>
             <a href="https://skillforge.uz/">SkillForge</a>
-            <a href="quizzes.html">Testlar</a>
-            <a href="index.html">Bosh menuga</a>
+            <a href="../quizzes.html">Testlar</a>
+            <a href="../index.html">Bosh menuga</a>
           </div>
         </nav>
       </div>
     </header>
 
-    <div class="title">
-      <h1 id="course-title">Kurs nomi</h1>
-    </div>
-    <section id="course-description"></section>
-    <main class="course-main">
-      <section id="lessons-container"></section>
+    <main class="changelog">
+      <section class="version">
+        <h1>v1.1.0</h1>
+        <p>Yangi sahifalar</p>
+        <ul>
+          <li>
+            <a href="terms.html">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Foydalanish shartlari
+            </a>
+          </li>
+          <li>
+            <a href="privacy.html">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Maxfiylik siyosati
+            </a>
+          </li>
+          <li>
+            <a href="version.html">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Veb-sayt versiyasi
+            </a>
+          </li>
+        </ul>
+        <p>Yangilangan 'Footer'. </p>
+        <p class="release-date">Chiqarilgan sana: 2025-01-23</p>
+      </section>
     </main>
 
     <!-- Footer -->
@@ -129,7 +150,7 @@
               </a>
             </li>
             <li>
-              <a href="html/version.html" target="_blank">
+              <a href="version.html" target="_blank">
                 <i class="fa-solid fa-circle-info"></i>
                 Veb-sayt versiyasi
               </a>

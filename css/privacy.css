@@ -1,0 +1,40 @@
+/* Privacy Styles */
+.content {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.privacy-container h1 {
+  font-size: 2.5rem;
+  color: #0a3981;
+  margin-bottom: 20px;
+}
+
+.privacy-container ul li {
+  margin-left: 30px;
+}
+
+.privacy-container h2 {
+  font-size: 1.8rem;
+  color: #0a3981;
+  margin-top: 30px;
+}
+
+.privacy-container p {
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.privacy-container a {
+  color: #0a3981;
+  text-decoration: underline;
+}
+
+.privacy-container a:hover {
+  text-decoration: none;
+  color: #08356b;
+}

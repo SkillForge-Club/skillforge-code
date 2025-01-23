@@ -6,10 +6,10 @@
     <title>Maxfiylik siyosati</title>
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,21 +17,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/privacy.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/course-quizzes.css" />
+    <link rel="stylesheet" href="../css/course-quizzes.css" />
 
     <!-- JS -->
-    <script src="/js/toggleMenu.js" async></script>
-    <script src="/js/course-quizzes.js"></script>
+    <script src="../js/toggleMenu.js" async></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="logo">
-          <img src="images/logo-code.png" alt="Code Logo" />
+          <img src="../images/logo-code.png" alt="Code Logo" />
         </div>
         <nav class="navbar">
           <div class="menu-toggle" onclick="toggleMenu()">
@@ -39,14 +39,55 @@
           </div>
           <div class="links">
             <a href="https://t.me/icode_club">Telegram</a>
-            <a href="courses.html">Kurslar</a>
+            <a href="../courses.html">Kurslar</a>
             <a href="https://skillforge.uz/">SkillForge</a>
-            <a href="quizzes.html">Testlar</a>
-            <a href="index.html">Bosh menuga</a>
+            <a href="../quizzes.html">Testlar</a>
+            <a href="../index.html">Bosh menuga</a>
           </div>
         </nav>
       </div>
     </header>
+
+    <main class="content">
+      <section class="privacy-container">
+        <h1>Maxfiylik Siyosati</h1>
+        <p>
+          <strong>Amal qilish sanasi:</strong>
+          23.01.25
+        </p>
+        <p>
+          <i>{i}Code</i>
+          sizning shaxsiy hayotingizni qadrlaydi va uni himoya qilishga intiladi. Ushbu Maxfiylik Siyosati bizning foydalanuvchi maxfiyligiga yondashuvimizni belgilaydi va biz foydalanuvchilardan hech qanday turdagi ma'lumotlarni to'plamasligimizni ochiq-oydin bildiradi.
+        </p>
+
+        <h2>1. Ma'lumot to'planmasligi</h2>
+        <p>Biz foydalanuvchilarning shaxsiy, foydalanish yoki texnik ma'lumotlarini to'plamaymiz, saqlamaymiz yoki qayta ishlamaymiz. Bu quyidagilarni o'z ichiga oladi, lekin ular bilan cheklanmaydi:</p>
+        <ul>
+          <li>Shaxsiy ma'lumotlar (masalan, ism, elektron pochta, telefon raqami).</li>
+          <li>Brauzer faoliyati yoki veb-saytdan foydalanish odatlari.</li>
+          <li>Cookie-fayllar, IP-manzillar yoki qurilma haqidagi ma'lumotlar.</li>
+        </ul>
+
+        <h2>2. Uchinchi tomon xizmatlari</h2>
+        <p>Ma'lumot to'plamasligimiz sababli, biz hech qanday ma'lumotni uchinchi tomon xizmatlariga ulashmaymiz. Agar veb-saytimiz uchinchi tomon veb-saytlariga havolalar beradigan bo'lsa, biz ularning maxfiylik siyosatini ko'rib chiqishingizni tavsiya qilamiz, chunki biz ularning amaliyotlari uchun javobgar emasmiz.</p>
+
+        <h2>3. Maxfiylik siyosatiga o‘zgarishlar</h2>
+        <p>Biz ushbu Maxfiylik Siyosatini vaqti-vaqti bilan yangilab turishimiz mumkin. Har qanday yangilanish ushbu sahifada "Amal qilish sanasi" bilan e'lon qilinadi.</p>
+
+        <h2>4. Biz bilan bog‘lanish</h2>
+        <p>Agar ushbu Maxfiylik Siyosati bo'yicha savollaringiz bo'lsa, biz bilan quyidagi manzillar orqali bog‘lanishingiz mumkin:</p>
+        <ul>
+          <li>
+            Elektron pochta:
+            <a href="mailto:skillforgeclub@gmail.com">skillforgeclub@gmail.com</a>
+          </li>
+          <li>
+            Veb-sayt:
+            <a href="https://code.skillforge.uz" target="_blank">code.skillforge.uz</a>
+          </li>
+        </ul>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -109,15 +150,21 @@
           <h4>Resurslar</h4>
           <ul>
             <li>
-              <a href="html/privacy.html" target="_blank">
+              <a href="privacy.html" target="_blank">
                 <i class="fas fa-file-contract"></i>
                 Maxfiylik siyosati
               </a>
             </li>
             <li>
-              <a href="html/terms.html" target="_blank">
+              <a href="terms.html" target="_blank">
                 <i class="fas fa-gavel"></i>
                 Foydalanish shartlari
+              </a>
+            </li>
+            <li>
+              <a href="version.html" target="_blank">
+                <i class="fa-solid fa-circle-info"></i>
+                Veb-sayt versiyasi
               </a>
             </li>
           </ul>

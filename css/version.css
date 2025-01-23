@@ -1,0 +1,37 @@
+.changelog {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.version {
+  border-bottom: 3px solid #0a3981;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.version ul li {
+  margin-left: 20px;
+}
+
+.version h1 {
+  font-size: 1.8rem;
+  color: #0a3981;
+  margin-bottom: 0.5rem;
+}
+
+.version p {
+  font-size: 1rem;
+  color: #0d49a3;
+}
+
+.version a {
+  font-size: 1rem;
+  color: #07295c;
+}
+
+.release-date {
+  font-style: italic;
+  font-size: 0.9rem;
+}
