@@ -1,0 +1,130 @@
+[
+  {
+    "question": "Internet qachon paydo bo‘lgan?",
+    "options": [
+      { "type": "text", "value": "1979" },
+      { "type": "text", "value": "1989" },
+      { "type": "text", "value": "1969" },
+      { "type": "text", "value": "1999" }
+    ],
+    "answer": "1969",
+    "explanations": {
+      "1969": "Internetning boshlanishi 1969 yilda ARPANET bilan boshlangan",
+      "1979": "1979 yil Internet tarixi uchun muhim, lekin ARPANET allaqachon ishlab turgan edi.",
+      "1989": "1989 yilda World Wide Web yaratildi, bu Internet emas.",
+      "1999": "1999 yilda Internet global foydalanish darajasiga chiqqan edi."
+    }
+  },
+  {
+    "question": "Internetning dastlabki loyihasi kim tomonidan moliyalashtirilgan?",
+    "options": [
+      { "type": "text", "value": "DARPA" },
+      { "type": "text", "value": "NASA" },
+      { "type": "text", "value": "Google" },
+      { "type": "text", "value": "IBM" }
+    ],
+    "answer": "DARPA",
+    "explanations": {
+      "DARPA": "DARPA (Mudofaa Ilmiy-Tadqiqot Loyihalari Agentligi) bu loyihani moliyalashtirgan.",
+      "NASA": "NASA kosmik tadqiqotlarga e'tibor qaratgan.",
+      "Google": "Google Internetdan keyin paydo bo‘lgan kompaniya.",
+      "IBM": "IBM texnologiya ishlab chiqaruvchisi, lekin ARPANET bilan bog‘liq emas."
+    }
+  },
+  {
+    "question": "Intranet nima uchun ishlatiladi?",
+    "options": [
+      { "type": "text", "value": "Tashqi foydalanuvchilar uchun ochiq bo‘lish uchun" },
+      { "type": "text", "value": "Ichki resurslarni xavfsiz ulashish uchun" },
+      { "type": "text", "value": "Veb-saytlarni yaratish uchun" },
+      { "type": "text", "value": "Internetni global qilish uchun" }
+    ],
+    "answer": "Ichki resurslarni xavfsiz ulashish uchun",
+    "explanations": {
+      "Tashqi foydalanuvchilar uchun ochiq bo‘lish uchun": "Bu Extranetning funksiyasi.",
+      "Ichki resurslarni xavfsiz ulashish uchun": "Intranet ichki resurslarni xavfsiz ulashish uchun ishlatiladi.",
+      "Veb-saytlarni yaratish uchun": "Intranet veb-saytlar yaratish uchun emas.",
+      "Internetni global qilish uchun": "Intranet global emas, ichki tarmoqdir."
+    }
+  },
+  {
+    "question": "ARPANETdagi birinchi xabar qachon yuborilgan?",
+    "options": [
+      { "type": "text", "value": "1969-yil 15-sentyabr" },
+      { "type": "text", "value": "1969-yil 29-oktabr" },
+      { "type": "text", "value": "1970-yil 5-yanvar" },
+      { "type": "text", "value": "1975-yil 3-mart" }
+    ],
+    "answer": "1969-yil 29-oktabr",
+    "explanations": {
+      "1969-yil 29-oktabr": "Birinchi xabar 1969-yil 29-oktabrda yuborilgan.",
+      "1969-yil 15-sentyabr": "Bu sana ARPANET tarixi uchun muhim emas.",
+      "1970-yil 5-yanvar": "Bu sana noto‘g‘ri.",
+      "1975-yil 3-mart": "Bu sana noto‘g‘ri."
+    }
+  },
+  {
+    "question": "Router qanday qurilmaga ulanadi?",
+    "options": [
+      { "type": "text", "value": "Kompyuter" },
+      { "type": "text", "value": "Modem" },
+      { "type": "text", "value": "Telefon" },
+      { "type": "text", "value": "Faks" }
+    ],
+    "answer": "Modem",
+    "explanations": {
+      "Kompyuter": "Router kompyuterga ulanadi, lekin asosiy ulanish modemdandir.",
+      "Modem": "Router modem orqali Internetga ulanadi.",
+      "Telefon": "Telefon router bilan to‘g‘ridan-to‘g‘ri ishlamaydi.",
+      "Faks": "Faks routerga ulanmaydi."
+    }
+  },
+  {
+    "question": "Modemning vazifasi nima?",
+    "options": [
+      { "type": "text", "value": "Ma'lumotni shifrlash" },
+      { "type": "text", "value": "Internet xizmat ko‘rsatuvchiga ulanib turish" },
+      { "type": "text", "value": "Qurilmalarni birlashtirish" },
+      { "type": "text", "value": "Internet tezligini boshqarish" }
+    ],
+    "answer": "Internet xizmat ko‘rsatuvchiga ulanib turish",
+    "explanations": {
+      "Ma'lumotni shifrlash": "Shifrlash modem vazifasi emas.",
+      "Internet xizmat ko‘rsatuvchiga ulanib turish": "Modem Internet xizmat ko‘rsatuvchiga ulanadi.",
+      "Qurilmalarni birlashtirish": "Bu routerning vazifasidir.",
+      "Internet tezligini boshqarish": "Tezlikni boshqarish modemga bog‘liq emas."
+    }
+  },
+  {
+    "question": "Suv osti kabellari nima uchun kerak?",
+    "options": [
+      { "type": "text", "value": "Ichki tarmoq yaratish uchun" },
+      { "type": "text", "value": "Global Internet ulanishini ta’minlash uchun" },
+      { "type": "text", "value": "Faqat xavfsizlikni oshirish uchun" },
+      { "type": "text", "value": "Simsiz aloqani tezlashtirish uchun" }
+    ],
+    "answer": "Global Internet ulanishini ta’minlash uchun",
+    "explanations": {
+      "Ichki tarmoq yaratish uchun": "Suv osti kabellari ichki tarmoq uchun ishlatilmaydi.",
+      "Global Internet ulanishini ta’minlash uchun": "Suv osti kabellari qit’alararo aloqani ta’minlaydi.",
+      "Faqat xavfsizlikni oshirish uchun": "Xavfsizlikdan ko‘ra global ulanish maqsadida ishlatiladi.",
+      "Simsiz aloqani tezlashtirish uchun": "Simsiz aloqa bu kabellarga bog‘liq emas."
+    }
+  },
+  {
+    "question": "Internet va Web o‘rtasidagi asosiy farq nima?",
+    "options": [
+      { "type": "text", "value": "Internet ma'lumotlar bazasi, Web esa brauzer" },
+      { "type": "text", "value": "Internet infratuzilma, Web xizmat" },
+      { "type": "text", "value": "Internet xavfsizroq, Web ochiq tizim" },
+      { "type": "text", "value": "Internet faqat simli, Web esa simsiz" }
+    ],
+    "answer": "Internet infratuzilma, Web xizmat",
+    "explanations": {
+      "Internet ma'lumotlar bazasi, Web esa brauzer": "Internet ma'lumotlar bazasi emas.",
+      "Internet infratuzilma, Web xizmat": "Internet infratuzilma, Web esa uning ustida ishlaydigan xizmatdir.",
+      "Internet xavfsizroq, Web ochiq tizim": "Xavfsizlik farqi bu kontekstdan tashqarida.",
+      "Internet faqat simli, Web esa simsiz": "Internet ham simsiz ishlay oladi."
+    }
+  }
+]

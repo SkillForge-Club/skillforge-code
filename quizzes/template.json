@@ -34,7 +34,12 @@
   },
   {
     "question": "Text-question-text-option type",
-    "options": ["A", "B", "C", "D"],
+    "options": [
+      { "type": "text", "value": "A" },
+      { "type": "text", "value": "B" },
+      { "type": "text", "value": "C" },
+      { "type": "text", "value": "D" }
+    ],
     "answer": "B",
     "explanations": {
       "A": "Option A is unrelated to the correct logic.",

@@ -16,8 +16,9 @@
   {
     "id": "2-dars",
     "course": "course2",
-    "title": "",
-    "description": "",
+    "title": "Internetni tushunish: U nima va qanday ishlaydi",
+    "description": "Bu dars Internetning tuzilishi va funksiyasini, uning kelib chiqishidan tortib, ma'lumotlarni tarmoqlar orqali qanday uzatilishini o‘rganadi. IP manzillari, routerlar va Internet bilan Web o‘rtasidagi farq asoslari yoritiladi.",
     "file": "/lessons/Asoslar-kursi/2-dars.md"
-  }
+}
+
 ]

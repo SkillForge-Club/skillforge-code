@@ -12,7 +12,7 @@ const questionCount = document.getElementById("question-count");
 let currentQuestionIndex = 0;
 let userAnswers = [];
 let quizData = []; // Initialize the quizData
-let incorrectAttempts = Array(5).fill(0); // Initialize incorrect attempts array for 5 questions
+let incorrectAttempts = Array(4).fill(0); // Initialize incorrect attempts array for 5 questions
 
 let score = 0;
 
@@ -54,7 +54,7 @@ async function fetchQuiz(quizId) {
     const response = await fetch(`/quizzes/${quizId}.json`);
     if (!response.ok) throw new Error("Quiz file not found");
     const allQuestions = await response.json();
-    return getRandomQuestions(allQuestions, 5);
+    return getRandomQuestions(allQuestions, 4);
   } catch (error) {
     console.error("Error fetching quiz:", error);
     return null;
@@ -177,8 +177,8 @@ function handleCheck() {
   }
 }
 
-function getRandomQuestions(allQuestions, numQuestions = 5) {
-  const shuffled = allQuestions.sort(() => 0.5 - Math.random());
+function getRandomQuestions(allQuestions, numQuestions = 4) {
+  const shuffled = allQuestions.sort(() => 0.4 - Math.random());
   return shuffled.slice(0, numQuestions);
 }
 
