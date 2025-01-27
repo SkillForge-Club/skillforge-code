@@ -33,7 +33,7 @@
   },
   {
     "question": "Bu rasmda qaysi operatsion tizim tasvirlangan?",
-    "image": "../images/quiz-images/Asoslar Kursi/1-dars/quiz.png",
+    "image": "../assets/imgs/Courses/AsoslarKursi/1-dars/quiz.png",
     "options": [
       { "type": "text", "value": "Linux" },
       { "type": "text", "value": "Windows" },

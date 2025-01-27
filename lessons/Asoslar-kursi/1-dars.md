@@ -64,8 +64,7 @@ Operatsion tizimni turli tillarda gaplashadigan odamlar o'rtasidagi tarjimon deb
 
 ### Operatsion tizim turlari
 
-![OSes](../../images/quiz-images/Asoslar%20Kursi/1-dars/oses.png)
-
+![OSes](../../assets/imgs/Courses/AsoslarKursi/1-dars/oses.png)
 
 Operatsion tizimlar odatda kompyuterga oldindan o'rnatilgan holda keladi. Ko'p odamlar o'z kompyuteriga o'rnatilgan operatsion tizimdan foydalanadi, ammo uni yangilash yoki almashtirish ham mumkin. Eng keng tarqalgan operatsion tizimlar:
 
@@ -94,7 +93,7 @@ macOS yuqori darajadagi butik do'koniga o'xshaydi. U noyob dizayn, yuqori sifat 
 - Ochiq manba kodli operatsion tizim, uni har kim o'zgartirishi va tarqatishi mumkin.
 - Misollar: Ubuntu, Linux Mint, Fedora.
 - Moslashuvchanligi va bepul bo'lgani uchun serverlarda keng tarqalgan.
-- Kopchilik ishlatadigan Android ham Linux asosida kurilgan. 
+- Kopchilik ishlatadigan Android ham Linux asosida kurilgan.
 
 ### Haqiqiy hayotdagi taqqoslash:
 
@@ -123,41 +122,42 @@ OS kompyuterning barcha resurslarini boshqaradi, jumladan:
 
 ## Grafik interfeys (GUI) va Buyruqlar satri interfeysi (CLI)
 
+Zamonaviy operatsion tizimlar foydalanuvchilarga tizim bilan o'zaro aloqada bo'lish uchun odatda Grafikli Foydalanuvchi Interfeysi (GUI) dan foydalanadi. Bu interfeys orqali ikonka, tugmalar va menyular yordamida ishlash mumkin. Boshqa tomondan, Komanda-Satr Interfeysi (CLI) foydalanuvchilardan vazifalarni bajarish uchun matnli buyruqlar yozishni talab qiladi.
 
-Zamonaviy operatsion tizimlar foydalanuvchilarga tizim bilan o'zaro aloqada bo'lish uchun odatda Grafikli Foydalanuvchi Interfeysi (GUI) dan foydalanadi. Bu interfeys orqali ikonka, tugmalar va menyular yordamida ishlash mumkin. Boshqa tomondan, Komanda-Satr Interfeysi (CLI) foydalanuvchilardan vazifalarni bajarish uchun matnli buyruqlar yozishni talab qiladi.  
+### Haqiqiy hayotdagi taqqoslash:
 
-### Haqiqiy hayotdagi taqqoslash:  
-
-- **GUI:** GUI dan foydalanish, xarid qilish markazida ochiq belgilar, eskalatorlar va xaritalar yordamida osongina manzilingizga borishga o'xshaydi.  
-- **CLI:** CLI dan foydalanish esa, do'kon xodimiga inventar haqida to'liq ma'lumotga ega bo'lgan holda kerakli narsani aniq tasvirlab berishga o'xshaydi.  
+- **GUI:** GUI dan foydalanish, xarid qilish markazida ochiq belgilar, eskalatorlar va xaritalar yordamida osongina manzilingizga borishga o'xshaydi.
+- **CLI:** CLI dan foydalanish esa, do'kon xodimiga inventar haqida to'liq ma'lumotga ega bo'lgan holda kerakli narsani aniq tasvirlab berishga o'xshaydi.
 
 ---
 
-## Ochiq manba va yopiq manba dasturlar  
+## Ochiq manba va yopiq manba dasturlar
 
-### Ochiq manba va yopiq manba nima?**  
+### Ochiq manba va yopiq manba nima?\*\*
 
-Barcha dasturlar manba kodi yordamida yaratiladi — bu dastur qanday ishlashini ko'rsatadigan texnik chizma. Dastur yaratuvchilari bu kodni ochiq manba yoki yopiq manba qilishni tanlashlari kerak:  
+Barcha dasturlar manba kodi yordamida yaratiladi — bu dastur qanday ishlashini ko'rsatadigan texnik chizma. Dastur yaratuvchilari bu kodni ochiq manba yoki yopiq manba qilishni tanlashlari kerak:
 
-- **Yopiq manba dastur (Proprietary Software):** Manba kodi ommaga ochilmaydi, foydalanuvchilar uni ko'rish yoki o'zgartirish imkoniyatiga ega emas.  
-- **Ochiq manba dastur:** Manba kodi ommaga ochiq, har kim uni ko'rishi, o'zgartirishi yoki baham ko'rishi mumkin.  
+- **Yopiq manba dastur (Proprietary Software):** Manba kodi ommaga ochilmaydi, foydalanuvchilar uni ko'rish yoki o'zgartirish imkoniyatiga ega emas.
+- **Ochiq manba dastur:** Manba kodi ommaga ochiq, har kim uni ko'rishi, o'zgartirishi yoki baham ko'rishi mumkin.
 
-### Haqiqiy hayotdagi taqqoslash:  
+### Haqiqiy hayotdagi taqqoslash:
 
-- **Yopiq manba dastur:** Bu restoranning maxfiy retseptiga o'xshaydi. Siz taomdan bahramand bo'lasiz, lekin retseptni ko'rish yoki o'zgartirish imkoniyati yo'q.  
-- **Ochiq manba dastur:** Bu ommaga taqdim etilgan retseptga o'xshaydi, uni o'zingizning didingizga moslashtirishingiz mumkin.  
+- **Yopiq manba dastur:** Bu restoranning maxfiy retseptiga o'xshaydi. Siz taomdan bahramand bo'lasiz, lekin retseptni ko'rish yoki o'zgartirish imkoniyati yo'q.
+- **Ochiq manba dastur:** Bu ommaga taqdim etilgan retseptga o'xshaydi, uni o'zingizning didingizga moslashtirishingiz mumkin.
 
-#### Misollar:**  
+#### Misollar:\*\*
 
-- **Yopiq manba dastur:** Microsoft Office, Adobe Photoshop, Windows.  
-- **Ochiq manba dastur:** LibreOffice, Firefox, Linux, WordPress.  
+- **Yopiq manba dastur:** Microsoft Office, Adobe Photoshop, Windows.
+- **Ochiq manba dastur:** LibreOffice, Firefox, Linux, WordPress.
 
 #### Afzalliklar va kamchiliklar
 
-**Ochiq manba dastur:**  
-- **Afzalliklari:** Odatda bepul, ommaviy hamkorlik orqali takomillashtirilgan, yuqori darajada moslashtiriladigan.  
-- **Kamchiliklari:** Foydalanuvchilar uchun qulay emas, yordam cheklangan bo'lishi mumkin.  
+**Ochiq manba dastur:**
 
-**Yopiq manba dastur:**  
-- **Afzalliklari:** Barqaror, foydalanuvchilar uchun qulay, maxsus mijozlarga xizmat ko'rsatish mavjud.  
-- **Kamchiliklari:** Odatda pulli, yangilanishlar va tuzatishlar uchun yaratuvchiga bog'liq.  
+- **Afzalliklari:** Odatda bepul, ommaviy hamkorlik orqali takomillashtirilgan, yuqori darajada moslashtiriladigan.
+- **Kamchiliklari:** Foydalanuvchilar uchun qulay emas, yordam cheklangan bo'lishi mumkin.
+
+**Yopiq manba dastur:**
+
+- **Afzalliklari:** Barqaror, foydalanuvchilar uchun qulay, maxsus mijozlarga xizmat ko'rsatish mavjud.
+- **Kamchiliklari:** Odatda pulli, yangilanishlar va tuzatishlar uchun yaratuvchiga bog'liq.

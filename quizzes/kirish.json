@@ -1,7 +1,7 @@
 [
   {
     "question": "Qaysi funksional imkoniyat kechasi o‘qish uchun qulaylik yaratadi?",
-    "image": "/images/quiz-images/Kirish/dark-theme.png",
+    "image": "../assets/imgs/Courses/Kirish/dark-theme.png",
     "options": [
       { "type": "text", "value": "Qorong‘i mavzu qo‘llab-quvvatlashi" },
       { "type": "text", "value": "Katta shrift o‘lchami" },
