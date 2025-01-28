@@ -1,7 +1,3 @@
-Here’s the translation of the text into Uzbek:
-
----
-
 ## Internet nima?
 
 Har kuni insoniyat juda katta miqdordagi raqamli kontent yaratadi:  
