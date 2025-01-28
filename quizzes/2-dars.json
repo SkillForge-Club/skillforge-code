@@ -39,7 +39,7 @@
       { "type": "text", "value": "O‘ta zich infratuzilma" },
       { "type": "text", "value": "Suv osti kabellari" }
     ],
-    "answer": "B",
+    "answer": "Suv osti kabellari",
     "explanations": {
       "Faqat simsiz tarmoq": "Internetda simsiz ulanishlar mavjud, lekin bu asosiy infratuzilma emas.",
       "Faqat telefon liniyalari": "Telefon liniyalari o‘tmishda asosiy edi.",
