@@ -172,8 +172,6 @@ function handleCheck() {
 
     // Update the dot to blue for incorrect answer
     progressDots[currentQuestionIndex].classList.add("incorrect");
-
-    // No explanations are revealed for incorrect attempts
   }
 }
 

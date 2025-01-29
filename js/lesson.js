@@ -41,7 +41,7 @@ async function renderLesson(lessonId) {
 
     quizLink.href = `/quiz.html?quiz=${lesson.id}`;
   } catch (error) {
-    lessonTitle.textContent = "Dars topilmadi";
+    lessonTitle.textContent = "Dars topilmadi (yoki, bo'lmasam, sahifani qayta yuklang)!";
     lessonContent.innerHTML = `<p>Kechirasiz, siz izlayotgan darsingiz topilmadi.</p>`;
     console.error("Error rendering lesson:", error);
   }

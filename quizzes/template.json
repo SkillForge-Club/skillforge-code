@@ -35,17 +35,17 @@
   {
     "question": "Text-question-text-option type",
     "options": [
-      { "type": "text", "value": "A" },
-      { "type": "text", "value": "B" },
-      { "type": "text", "value": "C" },
-      { "type": "text", "value": "D" }
+      { "type": "text", "value": "A Text" },
+      { "type": "text", "value": "B Text" },
+      { "type": "text", "value": "C Text" },
+      { "type": "text", "value": "D Text" }
     ],
-    "answer": "B",
+    "answer": "B Text",
     "explanations": {
-      "A": "Option A is unrelated to the correct logic.",
-      "B": "Option B is correct due to its logical fit.",
-      "C": "Option C is misleading and does not solve the problem.",
-      "D": "Option D is a distractor."
+      "A Text": "Option A is unrelated to the correct logic.",
+      "B Text": "Option B is correct due to its logical fit.",
+      "C Text": "Option C is misleading and does not solve the problem.",
+      "D Text": "Option D is a distractor."
     }
   }
 ]

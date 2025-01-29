@@ -116,7 +116,6 @@ body {
   height: auto; /* Maintain aspect ratio */
   display: block; /* Remove inline space below images */
   margin: auto; /* Center images if needed */
-  border-radius: 8px; /* Optional: Add rounded corners for a polished look */
 }
 
 

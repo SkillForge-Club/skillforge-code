@@ -11,14 +11,20 @@
     "course": "course2",
     "title": "Kompyuterlarni tushunish",
     "description": "Ushbu darsda siz kompyuterlarning asosiy qismlari, ularning ishlash prinsiplari, dasturiy va apparat ta'minotlari, shuningdek, operatsion tizimlar va ularning turlari haqida umumiy ma'lumot olasiz.",
-    "file": "/lessons/Asoslar-kursi/1-dars.md"
+    "file": "/lessons/Asoslar-kursi/1.Dastlabki-talablar/1-dars.md"
   },
   {
     "id": "2-dars",
     "course": "course2",
     "title": "Internetni tushunish: U nima va qanday ishlaydi",
     "description": "Bu dars Internetning tuzilishi va funksiyasini, uning kelib chiqishidan tortib, ma'lumotlarni tarmoqlar orqali qanday uzatilishini o‘rganadi. IP manzillari, routerlar va Internet bilan Web o‘rtasidagi farq asoslari yoritiladi.",
-    "file": "/lessons/Asoslar-kursi/2-dars.md"
-}
-
+    "file": "/lessons/Asoslar-kursi/1.Dastlabki-talablar/1-dars.md"
+  },
+  {
+    "id": "3-dars",
+    "course": "course2",
+    "title": "HTML, CSS va JavaScriptga kirish",
+    "description": "Ushbu darsda HTML va CSS asoslari, ularning veb-sahifa yaratishdagi o‘rni hamda JavaScriptning interaktivlik qo‘shishdagi roli haqida bilib olasiz. Shuningdek, veb-ishlab chiqishda qo‘llaniladigan boshqa dasturlash tillari haqida ham umumiy ma'lumot beriladi.",
+    "file": "/lessons/Asoslar-kursi/1.Dastlabki-talablar/3-dars.md"
+  }
 ]
