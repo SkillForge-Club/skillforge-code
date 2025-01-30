@@ -17,7 +17,6 @@ Ushbu darsda siz quyidagilarni o‘rganasiz:
 
 HTML va CSS birga ishlaydi va internetdagi barcha sahifalarni yaratish uchun ishlatiladi. **HTML** sahifalarning tarkibini shakllantiradi, **CSS** esa ularni vizual jihatdan chiroyli qiladi.  
 
-![HTML](../../../assets/imgs/Courses/AsoslarKursi/3-dars/html.jpg)
 ### **HTML: Tarkib va Tuzilish**  
 HTML (**Hypertext Markup Language**) — bu veb-hujjatlar va sahifalarning tuzilishini yaratish uchun ishlatiladigan til. U sahifadagi quyidagi elementlarni shakllantirish uchun ishlatiladi:  
 - Matn  

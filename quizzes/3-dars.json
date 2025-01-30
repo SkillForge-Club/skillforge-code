@@ -1,0 +1,130 @@
+[
+  {
+    "question": "HTMLning asosiy vazifasi nima?",
+    "options": [
+      { "type": "text", "value": "Veb-sahifa tarkibini tuzish" },
+      { "type": "text", "value": "Veb-sahifa dizaynini yaratish" },
+      { "type": "text", "value": "Interaktivlik qo'shish" },
+      { "type": "text", "value": "Ma'lumotlar bazasini boshqarish" }
+    ],
+    "answer": "Veb-sahifa tarkibini tuzish",
+    "explanations": {
+      "Veb-sahifa tarkibini tuzish": "HTML veb-sahifaning asosiy tuzilishi va tarkibini belgilaydi (poydevor va karkas).",
+      "Veb-sahifa dizaynini yaratish": "Bu CSSning vazifasidir (ranglar, shriftlar).",
+      "Interaktivlik qo'shish": "JavaScript interaktivlikni ta'minlaydi.",
+      "Ma'lumotlar bazasini boshqarish": "Bu SQL yoki Python kabi tillarga tegishli."
+    }
+  },
+  {
+    "question": "CSS nimani anglatadi?",
+    "options": [
+      { "type": "text", "value": "Cascading Style Sheets" },
+      { "type": "text", "value": "Computer Style System" },
+      { "type": "text", "value": "Creative Styling Software" },
+      { "type": "text", "value": "Colorful Site Styles" }
+    ],
+    "answer": "Cascading Style Sheets",
+    "explanations": {
+      "Cascading Style Sheets": "To'g'ri! CSS HTML elementlariga uslub berish uchun ishlatiladi.",
+      "Computer Style System": "Noto'g'ri atama.",
+      "Creative Styling Software": "CSS dastur emas, til hisoblanadi.",
+      "Colorful Site Styles": "Bu CSSning faqat bir qismidir."
+    }
+  },
+  {
+    "question": "Veb-sahifaga animatsiyalar qo'shish uchun qaysi texnologiya kerak?",
+    "options": [
+      { "type": "text", "value": "JavaScript" },
+      { "type": "text", "value": "HTML" },
+      { "type": "text", "value": "CSS" },
+      { "type": "text", "value": "PHP" }
+    ],
+    "answer": "JavaScript",
+    "explanations": {
+      "JavaScript": "To'g'ri! JS interaktiv animatsiyalar yaratadi.",
+      "HTML": "HTML faqat tarkibni ko'rsatadi.",
+      "CSS": "CSS oddiy animatsiyalar qo'shishi mumkin, lekin interaktiv emas.",
+      "PHP": "PHP backend uchun ishlatiladi."
+    }
+  },
+  {
+    "question": "CSSni real hayotda nima bilan taqqoslash mumkin?",
+    "options": [
+      { "type": "text", "value": "Uyning poydevori" },
+      { "type": "text", "value": "Devorlarni bo'yash" },
+      { "type": "text", "value": "Aqlli termostat" },
+      { "type": "text", "value": "Karkas metalli ramka" }
+    ],
+    "answer": "Devorlarni bo'yash",
+    "explanations": {
+      "Uyning poydevori": "Bu HTMLga tegishli.",
+      "Devorlarni bo'yash": "To'g'ri! CSS vizual dizaynni ifodalaydi.",
+      "Aqlli termostat": "Bu JavaScript bilan bog'liq.",
+      "Karkas metalli ramka": "Bu HTML strukturasi misolidir."
+    }
+  },
+  {
+    "question": "Quyidagilardan qaysi biri backend dasturlash tili hisoblanadi?",
+    "options": [
+      { "type": "text", "value": "PHP" },
+      { "type": "text", "value": "HTML" },
+      { "type": "text", "value": "CSS" },
+      { "type": "text", "value": "JavaScript" }
+    ],
+    "answer": "PHP",
+    "explanations": {
+      "PHP": "To'g'ri! PHP server tomonida ishlaydi.",
+      "HTML": "Frontend strukturasi uchun.",
+      "CSS": "Frontend dizayni uchun.",
+      "JavaScript": "Frontend interaktivligi uchun."
+    }
+  },
+  {
+    "question": "CSS yordamida nimalarni boshqarish mumkin?",
+    "options": [
+      { "type": "text", "value": "Ranglar va shriftlar" },
+      { "type": "text", "value": "Ma'lumotlar bazasi" },
+      { "type": "text", "value": "Foydalanuvchi kiritishi" },
+      { "type": "text", "value": "Server logikasi" }
+    ],
+    "answer": "Ranglar va shriftlar",
+    "explanations": {
+      "Ranglar va shriftlar": "To'g'ri! CSS vizual uslubni belgilaydi.",
+      "Ma'lumotlar bazasi": "Bu backend va SQLga tegishli.",
+      "Foydalanuvchi kiritishi": "Bu JavaScript bilan boshqariladi.",
+      "Server logikasi": "PHP yoki Ruby bilan amalga oshiriladi."
+    }
+  },
+  {
+    "question": "JavaScript nimasiz qila olmaydi?",
+    "options": [
+      { "type": "text", "value": "Formalarni tekshirish" },
+      { "type": "text", "value": "Sahifani qayta yuklamasdan yangilash" },
+      { "type": "text", "value": "Veb-sahifa strukturasi" },
+      { "type": "text", "value": "Animatsiyalar yaratish" }
+    ],
+    "answer": "Veb-sahifa strukturasi",
+    "explanations": {
+      "Formalarni tekshirish": "JavaScript buni qila oladi.",
+      "Sahifani qayta yuklamasdan yangilash": "AJAX orqali amalga oshiriladi.",
+      "Veb-sahifa strukturasi": "To'g'ri! Bu HTMLning vazifasidir.",
+      "Animatsiyalar yaratish": "JS animatsiyalarni boshqarishi mumkin."
+    }
+  },
+  {
+    "question": "Quyidagi texnologiyalarni ularning vazifalari bilan to‘g‘ri bog‘lang:",
+    "options": [
+      { "type": "text", "value": "HTML - Tuzilma, CSS - Dizayn, JS - Interaktivlik" },
+      { "type": "text", "value": "HTML - Dizayn, CSS - Interaktivlik, JS - Tuzilma" },
+      { "type": "text", "value": "HTML - Interaktivlik, CSS - Tuzilma, JS - Dizayn" },
+      { "type": "text", "value": "HTML - Ma'lumotlar bazasi, CSS - Server, JS - Dizayn" }
+    ],
+    "answer": "HTML - Tuzilma, CSS - Dizayn, JS - Interaktivlik",
+    "explanations": {
+      "HTML - Tuzilma, CSS - Dizayn, JS - Interaktivlik": "To'g'ri! Bu ularning asosiy rolidir.",
+      "HTML - Dizayn, CSS - Interaktivlik, JS - Tuzilma": "Noto'g'ri, CSS dizayn uchun.",
+      "HTML - Interaktivlik, CSS - Tuzilma, JS - Dizayn": "JavaScript interaktivlikni ta'minlaydi.",
+      "HTML - Ma'lumotlar bazasi, CSS - Server, JS - Dizayn": "Umuman noto'g'ri taqsimlov."
+    }
+  }
+]
