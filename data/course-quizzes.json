@@ -38,8 +38,11 @@
           {
             "title": "Internetni Tushunish",
             "file": "2-dars"
-          }
-                    
+          },
+          {
+            "title": "HTML, CSS va JavaScript",
+            "file": "3-dars"
+          }         
         ]
       }
     ]
