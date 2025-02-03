@@ -25,13 +25,13 @@
     "course": "course2",
     "title": "HTML, CSS va JavaScriptga kirish",
     "description": "Ushbu darsda HTML va CSS asoslari, ularning veb-sahifa yaratishdagi o‘rni hamda JavaScriptning interaktivlik qo‘shishdagi roli haqida bilib olasiz. Shuningdek, veb-ishlab chiqishda qo‘llaniladigan boshqa dasturlash tillari haqida ham umumiy ma'lumot beriladi.",
-    "file": "/lessons/Asoslar-kursi/1.Dastlabki-talablar/3-dars.md"
+    "file": "/lessons/Asoslar-kursi/2.HTML-Asoslari/3-dars.md"
   },
   {
     "id": "4-dars",
     "course": "course2",
     "title": "HTML Asoslari: Taglar, Elementlar va Semantik HTML",
     "description": "Ushbu darsda HTML tili, taglar, elementlar, semantik HTML va void elementlar haqida batafsil ma'lumot beriladi. Real hayotiy misollar orqali HTMLning qanday ishlashi tushuntiriladi va veb sahifa yaratishdagi o'rni ko'rsatiladi.",
-    "file": "lessons/Asoslar-kursi/2.HTML-Asoslari/4-dars.md"
+    "file": "/lessons/Asoslar-kursi/2.HTML-Asoslari/4-dars.md"
   }
 ]
