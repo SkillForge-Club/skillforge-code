@@ -7,11 +7,10 @@
       {
         "id": "1-1",
         "title": "1-Bo'lim: Kirish",
-        "description": "",
         "quizzes": [
           {
             "title": "Birinchi Test",
-            "file": "kirish"
+            "url": "quizzes/kirish.json"
           }
         ]
       }
@@ -29,20 +28,39 @@
         "quizzes": [
           {
             "title": "Kompyuterlarni tushunish",
-            "file": "1-dars"
+            "url": "quizzes/Asoslar-kursi/Dastlabki-talablar/1-dars.json"
           },
           {
             "title": "Kompyuterlarni tushunish(Qoʻshimcha test)",
-            "file": "1-dars-qoshimcha"
+            "url": "quizzes/Asoslar-kursi/Dastlabki-talablar/1-dars-qoshimcha.json"
           },
           {
             "title": "Internetni Tushunish",
-            "file": "2-dars"
-          },
+            "url": "quizzes/Asoslar-kursi/Dastlabki-talablar/2-dars.json"
+          }
+        ]
+      },
+      {
+        "id": "1-2",
+        "title": "2-Bo'lim: HTML Asoslari",
+        "description": "Veb-sahifalarning tuzilishini yaratish uchun ishlatiladigan HTML belgilash tili va uning asosiy elementlari.",
+        "quizzes": [
           {
             "title": "HTML, CSS va JavaScript",
-            "file": "3-dars"
-          }         
+            "url": "quizzes/Asoslar-kursi/HTML-Asoslari/3-dars.json"
+          },
+          {
+            "title": "HTML Asoslari: Taglar, Elementlar va Semantik HTML 1 qism",
+            "url": "quizzes/Asoslar-kursi/HTML-Asoslari/4-dars-1.json"
+          },
+          {
+            "title": "HTML Asoslari: Taglar, Elementlar va Semantik HTML 2 qism",
+            "url": "quizzes/Asoslar-kursi/HTML-Asoslari/4-dars-2.json"
+          },
+          {
+            "title": "HTML Asoslari: Taglar, Elementlar va Semantik HTML 3 qism",
+            "url": "quizzes/Asoslar-kursi/HTML-Asoslari/4-dars-3.json"
+          }
         ]
       }
     ]

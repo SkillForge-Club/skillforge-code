@@ -28,7 +28,7 @@ async function renderStartMenu(quizId) {
     return;
   }
 
-  quizTitle.textContent = `Test: ${quizId}`;
+  quizTitle.textContent = `Test`;
   questionCount.textContent = `Ushbu testda ${quizData.length} ta savol mavjud.`;
 
   // Create progress dots based on number of questions
@@ -49,9 +49,10 @@ startButton.addEventListener("click", () => {
   renderQuestion(currentQuestionIndex);
 });
 
-async function fetchQuiz(quizId) {
+async function fetchQuiz(quizUrl) {
   try {
-    const response = await fetch(`/quizzes/${quizId}.json`);
+    const decodedUrl = decodeURIComponent(quizUrl);
+    const response = await fetch(decodedUrl);
     if (!response.ok) throw new Error("Quiz file not found");
     const allQuestions = await response.json();
     return getRandomQuestions(allQuestions, 4);
@@ -61,36 +62,73 @@ async function fetchQuiz(quizId) {
   }
 }
 
+// Update the initialization code
+const quizPath = urlParams.get("quiz");
+if (quizPath) {
+  renderStartMenu(quizPath);
+}
+
 function renderQuestion(index) {
-  const question = quizData[index]; // Access quizData after it's loaded
+  const question = quizData[index];
   quizContainer.innerHTML = "";
 
   const questionDiv = document.createElement("div");
   questionDiv.classList.add("quiz-question");
 
-  let questionContent = `<h3>${index + 1}-savol: ${question.question}</h3>`;
+  const questionHeading = document.createElement("h3");
+  questionHeading.textContent = `${index + 1}-savol: ${question.question}`;
+  questionDiv.appendChild(questionHeading);
+
   if (question.image) {
-    questionContent += `<img src="${question.image}" alt="Savol rasmi" class="question-image">`;
+    const img = document.createElement("img");
+    img.src = question.image;
+    img.alt = "Savol rasmi";
+    img.classList.add("question-image");
+    questionDiv.appendChild(img);
   }
 
-  const options = question.options
-    .map((option, i) => {
-      const value = typeof option === "string" ? option : option.value;
-      return `
-        <div class="option-wrapper">
-          <label>
-            <input type="radio" name="q${index}" value="${value}" class="quiz-option">
-            ${typeof option === "object" && option.type === "image" ? `<img src="${value}" alt="Option ${i + 1}">` : value}
-          </label>
-          <p class="explanation" id="explanation-${value}" hidden>
-            ${question.explanations[value]}
-          </p>
-        </div>
-      `;
-    })
-    .join("");
+  question.options.forEach((option, i) => {
+    const value = typeof option === "string" ? option : option.value;
 
-  questionDiv.innerHTML = questionContent + options;
+    // Create wrapper for option
+    const optionWrapper = document.createElement("div");
+    optionWrapper.classList.add("option-wrapper");
+
+    const label = document.createElement("label");
+
+    // Create radio input
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.name = `q${index}`;
+    input.value = value;
+    input.classList.add("quiz-option");
+
+    label.appendChild(input);
+
+    // For text options, create a text node
+    if (typeof option === "object" && option.type === "image") {
+      const img = document.createElement("img");
+      img.src = value;
+      img.alt = `Option ${i + 1}`;
+      label.appendChild(img);
+    } else {
+      const textNode = document.createTextNode(value);
+      label.appendChild(textNode);
+    }
+
+    optionWrapper.appendChild(label);
+
+    // Create explanation paragraph
+    const explanation = document.createElement("p");
+    explanation.classList.add("explanation");
+    explanation.id = `explanation-${value}`;
+    explanation.hidden = true;
+    explanation.textContent = question.explanations[value] || "";
+    optionWrapper.appendChild(explanation);
+
+    questionDiv.appendChild(optionWrapper);
+  });
+
   quizContainer.appendChild(questionDiv);
   resultElement.textContent = `Savol ${index + 1}/${quizData.length}`;
   checkButton.style.display = "block";
@@ -116,6 +154,10 @@ function playSound(type) {
     audio.src = "audio/wrong.mp3";
   }
   audio.play();
+}
+
+function escapeHtml(str) {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
 }
 
 function handleCheck() {

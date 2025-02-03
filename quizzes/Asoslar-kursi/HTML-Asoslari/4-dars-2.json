@@ -1,0 +1,130 @@
+[
+  {
+    "question": "Void (o'z-o'zini yopuvchi) elementlarga misol ko'rsating:",
+    "options": [
+      { "type": "text", "value": "<p>" },
+      { "type": "text", "value": "<br>" },
+      { "type": "text", "value": "<div>" },
+      { "type": "text", "value": "<span>" }
+    ],
+    "answer": "<br>",
+    "explanations": {
+      "<br>": "To'g'ri! <br> - hech qanday kontent olmaydigan void element.",
+      "<p>": "Noto'g'ri, <p> yopish tagi bilan ishlatiladi.",
+      "<div>": "Noto'g'ri, <div> konteyner element hisoblanadi.",
+      "<span>": "Noto'g'ri, <span> matn uchun ishlatiladi."
+    }
+  },
+  {
+    "question": "<img> tegida qaysi atribut majburiy?",
+    "options": [
+      { "type": "text", "value": "alt" },
+      { "type": "text", "value": "src" },
+      { "type": "text", "value": "width" },
+      { "type": "text", "value": "border" }
+    ],
+    "answer": "src",
+    "explanations": {
+      "src": "To'g'ri! Rasm manzilini ko'rsatish uchun src atributi majburiy.",
+      "alt": "Alt atributi tavsif uchun muhim, lekin texnik jihatdan majburiy emas.",
+      "width": "Bu ixtiyoriy atribut.",
+      "border": "Bu eski HTML uslubi, hozir ishlatilmaydi."
+    }
+  },
+  {
+    "question": "Qaysi element to'g'ri yozilgan?",
+    "options": [
+      { "type": "text", "value": "<input type='text'></input>" },
+      { "type": "text", "value": "<hr>" },
+      { "type": "text", "value": "<br></br>" },
+      { "type": "text", "value": "<img src='photo.jpg'>...</img>" }
+    ],
+    "answer": "<hr>",
+    "explanations": {
+      "<hr>": "To'g'ri! <hr> - void element, yopish tegiga ega emas.",
+      "<input type='text'></input>": "Noto'g'ri, <input> void element hisoblanadi.",
+      "<br></br>": "Noto'g'ri, <br> yopish tegsiz ishlatiladi.",
+      "<img src='photo.jpg'>...</img>": "Noto'g'ri, <img> uchun yopish tegi kerak emas."
+    }
+  },
+  {
+    "question": "Qaysi element yopish tegini talab qiladi?",
+    "options": [
+      { "type": "text", "value": "<meta>" },
+      { "type": "text", "value": "<a>" },
+      { "type": "text", "value": "<link>" },
+      { "type": "text", "value": "<wbr>" }
+    ],
+    "answer": "<a>",
+    "explanations": {
+      "<a>": "To'g'ri! Havolalar yopish tegi </a> bilan ishlaydi.",
+      "<meta>": "Noto'g'ri, bu void element.",
+      "<link>": "Noto'g'ri, bu ham void element.",
+      "<wbr>": "Noto'g'ri, bu ham o'z-o'zini yopuvchi element."
+    }
+  },
+  {
+    "question": "HTML5 da qaysi sintaksis tavsiya etilmaydi?",
+    "options": [
+      { "type": "text", "value": "<br>" },
+      { "type": "text", "value": "<hr/>" },
+      { "type": "text", "value": "<img src='cat.jpg'>" },
+      { "type": "text", "value": "<input type='text'>" }
+    ],
+    "answer": "<hr/>",
+    "explanations": {
+      "<hr/>": "To'g'ri! HTML5 da void elementlarni / bilan yopish tavsiya etilmaydi.",
+      "<br>": "Bu to'g'ri sintaksis.",
+      "<img src='cat.jpg'>": "Bu ham to'g'ri sintaksis.",
+      "<input type='text'>": "Bu ham to'g'ri."
+    }
+  },
+  {
+    "question": "Void elementlarning asosiy vazifasi nima?",
+    "options": [
+      { "type": "text", "value": "Matnni formatlash" },
+      { "type": "text", "value": "Kontentni o'rab turish" },
+      { "type": "text", "value": "Hech qanday kontent olmasdan strukturani belgilash" },
+      { "type": "text", "value": "Ranglar qo'shish" }
+    ],
+    "answer": "Hech qanday kontent olmasdan strukturani belgilash",
+    "explanations": {
+      "Hech qanday kontent olmasdan strukturani belgilash": "To'g'ri! Void elementlar faqat strukturani ko'rsatadi.",
+      "Matnni formatlash": "Bu CSS vazifasi.",
+      "Kontentni o'rab turush": "Bu oddiy elementlar vazifasi.",
+      "Ranglar qo'shish": "Bu HTML emas, CSS bilan amalga oshiriladi."
+    }
+  },
+  {
+    "question": "Qaysi tag sahifada gorizontal chiziq chizish uchun ishlatiladi?",
+    "options": [
+      { "type": "text", "value": "<line>" },
+      { "type": "text", "value": "<hr>" },
+      { "type": "text", "value": "<br>" },
+      { "type": "text", "value": "<div>" }
+    ],
+    "answer": "<hr>",
+    "explanations": {
+      "<hr>": "To'g'ri! <hr> - gorizontal chiziq (thematic break) uchun.",
+      "<line>": "Bunday HTML tegi mavjud emas.",
+      "<br>": "Bu qatorni bo'shatish uchun.",
+      "<div>": "Bu umumiy konteyner."
+    }
+  },
+  {
+    "question": "Quyidagilardan qaysi biri void element EMAS?",
+    "options": [
+      { "type": "text", "value": "<img>" },
+      { "type": "text", "value": "<input>" },
+      { "type": "text", "value": "<textarea>" },
+      { "type": "text", "value": "<meta>" }
+    ],
+    "answer": "<textarea>",
+    "explanations": {
+      "<textarea>": "To'g'ri! <textarea> yopish tegi </textarea> bilan ishlatiladi.",
+      "<img>": "Bu void element.",
+      "<input>": "Bu ham void element.",
+      "<meta>": "Bu ham void element."
+    }
+  }
+]

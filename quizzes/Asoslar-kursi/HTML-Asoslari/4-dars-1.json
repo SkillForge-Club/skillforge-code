@@ -1,0 +1,130 @@
+[
+  {
+    "question": "HTML nimaning qisqartmasidir?",
+    "options": [
+      { "type": "text", "value": "HyperText Modern Language" },
+      { "type": "text", "value": "High-Tech Markup Language" },
+      { "type": "text", "value": "HyperText Markup Language" },
+      { "type": "text", "value": "Home Tool Management Layer" }
+    ],
+    "answer": "HyperText Markup Language",
+    "explanations": {
+      "HyperText Markup Language": "To'g'ri! HTML - HyperText Markup Language degan ma'noni anglatadi.",
+      "HyperText Modern Language": "Noto'g'ri, 'Modern' so'zi HTMLda ishlatilmaydi.",
+      "High-Tech Markup Language": "Noto'g'ri, 'High-Tech' HTML bilan bog'liq emas.",
+      "Home Tool Management Layer": "Bu HTMLning rasmiy tarjimasi emas."
+    }
+  },
+  {
+    "question": "HTML taglari nima vazifani bajaradi?",
+    "options": [
+      { "type": "text", "value": "Veb-sahifani ranglarini belgilaydi" },
+      { "type": "text", "value": "Kontentning tuzilishi va ma'nosini bildiradi" },
+      { "type": "text", "value": "Matnni qalinlashtiradi" },
+      { "type": "text", "value": "Animatsiyalar yaratadi" }
+    ],
+    "answer": "Kontentning tuzilishi va ma'nosini bildiradi",
+    "explanations": {
+      "Kontentning tuzilishi va ma'nosini bildiradi": "To'g'ri! Taglar brauzerga kontentni qanday ko'rsatishni emas, balki ma'no va tuzilishni bildiradi.",
+      "Veb-sahifani ranglarini belgilaydi": "Bu CSS vazifasi.",
+      "Matnni qalinlashtiradi": "Bu faqat bitta tagning (<strong>) xususiyati.",
+      "Animatsiyalar yaratadi": "Bu JavaScript yoki CSS animatsiyalari vazifasi."
+    }
+  },
+  {
+    "question": "Qaysi element to'liq HTML element ko'rinishida?",
+    "options": [
+      { "type": "text", "value": "<p>Paragraf</p>" },
+      { "type": "text", "value": "<img src='rasm.jpg'>" },
+      { "type": "text", "value": "<br>" },
+      { "type": "text", "value": "<html>" }
+    ],
+    "answer": "<p>Paragraf</p>",
+    "explanations": {
+      "<p>Paragraf</p>": "To'g'ri! Bu ochish, kontent va yopish taglaridan iborat to'liq element.",
+      "<img src='rasm.jpg'>": "Bu void element, yopish tagisiz.",
+      "<br>": "Bu ham void element.",
+      "<html>": "Yopish tagi </html> bilan ishlatilishi kerak."
+    }
+  },
+  {
+    "question": "Void elementlarga misol keltiring:",
+    "options": [
+      { "type": "text", "value": "<div>" },
+      { "type": "text", "value": "<br>" },
+      { "type": "text", "value": "<p>" },
+      { "type": "text", "value": "<h1>" }
+    ],
+    "answer": "<br>",
+    "explanations": {
+      "<br>": "To'g'ri! <br> - o'z-o'zini yopuvchi (void) element.",
+      "<div>": "Noto'g'ri, <div> yopish tagi bilan ishlatiladi.",
+      "<p>": "Noto'g'ri, paragraf yopish tagi talab qiladi.",
+      "<h1>": "Noto'g'ri, sarlavhalar yopish tagiga ega."
+    }
+  },
+  {
+    "question": "Semantik HTML nima uchun muhim?",
+    "options": [
+      { "type": "text", "value": "Ranglar yaxshi ko'rinishi uchun" },
+      { "type": "text", "value": "Kodni tezroq ishlashi uchun" },
+      { "type": "text", "value": "Kontentning ma'nosini aniqroq etkazish uchun" },
+      { "type": "text", "value": "Animatsiyalar qo'shish uchun" }
+    ],
+    "answer": "Kontentning ma'nosini aniqroq etkazish uchun",
+    "explanations": {
+      "Kontentning ma'nosini aniqroq etkazish uchun": "To'g'ri! Semantik taglar SEO va qulaylikni oshiradi.",
+      "Ranglar yaxshi ko'rinishi uchun": "Bu CSS bilan bog'liq.",
+      "Kodni tezroq ishlashi uchun": "Semantika ishlash tezligiga bevosita ta'sir qilmaydi.",
+      "Animatsiyalar qo'shish uchun": "Bu JavaScript vazifasi."
+    }
+  },
+  {
+    "question": "Qaysi tag paragraf yaratish uchun ishlatiladi?",
+    "options": [
+      { "type": "text", "value": "<par>" },
+      { "type": "text", "value": "<pg>" },
+      { "type": "text", "value": "<paragraph>" },
+      { "type": "text", "value": "<p>" }
+    ],
+    "answer": "<p>",
+    "explanations": {
+      "<p>": "To'g'ri! <p> - paragraf uchun standart tag.",
+      "<par>": "Bunday HTML tagi mavjud emas.",
+      "<pg>": "Noto'g'ri qisqartma.",
+      "<paragraph>": "HTMLda bunday uzun tag yo'q."
+    }
+  },
+  {
+    "question": "HTML elementining to'g'ri tuzilishi qaysi?",
+    "options": [
+      { "type": "text", "value": "<tag>Kontent<tag>" },
+      { "type": "text", "value": "<tag>Kontent</tag>" },
+      { "type": "text", "value": "</tag>Kontent<tag>" },
+      { "type": "text", "value": "<tag></tag>Kontent" }
+    ],
+    "answer": "<tag>Kontent</tag>",
+    "explanations": {
+      "<tag>Kontent</tag>": "To'g'ri! Element ochish va yopish taglari orasida joylashadi.",
+      "<tag>Kontent<tag>": "Noto'g'ri, yopish tagi / belgisiz.",
+      "</tag>Kontent<tag>": "Tartib noto'g'ri.",
+      "<tag></tag>Kontent": "Kontent taglar orasida emas."
+    }
+  },
+  {
+    "question": "Semantik HTML taglariga misol:",
+    "options": [
+      { "type": "text", "value": "<div>" },
+      { "type": "text", "value": "<span>" },
+      { "type": "text", "value": "<header>" },
+      { "type": "text", "value": "<bold>" }
+    ],
+    "answer": "<header>",
+    "explanations": {
+      "<header>": "To'g'ri! Bu semantik tag sahifa sarlavhasini bildiradi.",
+      "<div>": "Umumiy konteyner, semantik emas.",
+      "<span>": "Matn uchun konteyner, semantik emas.",
+      "<bold>": "Bunday HTML tagi mavjud emas."
+    }
+  }
+]

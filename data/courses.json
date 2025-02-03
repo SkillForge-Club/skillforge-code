@@ -21,13 +21,13 @@
         "id": "1-1",
         "title": "1-Bo'lim: Dastlabki talablar",
         "description": "Kursning asosiy bo‘limlariga o‘tishdan oldin bilish zarur bo‘lgan bilim va ko‘nikmalar.",
-        "lessons": ["1-dars", "2-dars", "3-dars"]
+        "lessons": ["1-dars", "2-dars"]
       },
       {
         "id": "1-2",
         "title": "2-Bo'lim: HTML Asoslari",
         "description": "Veb-sahifalarning tuzilishini yaratish uchun ishlatiladigan HTML belgilash tili va uning asosiy elementlari.",
-        "lessons": []
+        "lessons": ["3-dars", "4-dars"]
       },
       {
         "id": "1-3",

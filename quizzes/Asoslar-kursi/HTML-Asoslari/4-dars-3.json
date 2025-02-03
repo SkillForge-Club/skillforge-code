@@ -1,0 +1,130 @@
+[
+  {
+    "question": "Sovg'ani o'rash misolida 'qadoq' HTML ning qaysi qismiga mos keladi?",
+    "options": [
+      { "type": "text", "value": "Taglar" },
+      { "type": "text", "value": "Kontent" },
+      { "type": "text", "value": "CSS" },
+      { "type": "text", "value": "Brauzer" }
+    ],
+    "answer": "Taglar",
+    "explanations": {
+      "Taglar": "To'g'ri! Qadoq taglar kabi elementning boshlanishi va tugashini belgilaydi.",
+      "Kontent": "Noto'g'ri. Kontent sovg'aning o'ziga (matn yoki rasmlarga) mos keladi.",
+      "CSS": "Bu stil berish uchun ishlatiladi, misolda mavjud emas.",
+      "Brauzer": "Brauzer sovg'ani ko'ruvchi odamga o'xshaydi."
+    }
+  },
+  {
+    "question": "Sovg'a qutisi HTML elementlari bilan qanday solishtiriladi?",
+    "options": [
+      { "type": "text", "value": "Ochish va yopish taglari + kontent" },
+      { "type": "text", "value": "Faqat ochish tagi" },
+      { "type": "text", "value": "CSS kodlari" },
+      { "type": "text", "value": "Brauzerning ichki tizimi" }
+    ],
+    "answer": "Ochish va yopish taglari + kontent",
+    "explanations": {
+      "Ochish va yopish taglari + kontent": "To'g'ri! Quti taglar va ular orasidagi kontentdan iborat.",
+      "Faqat ochish tagi": "Void elementlar uchun ishlatiladi, quti emas.",
+      "CSS kodlari": "Bu stil berish uchun, element tuzilishi emas.",
+      "Brauzerning ichki tizimi": "Bu HTML bilan bevosita bog'liq emas."
+    }
+  },
+  {
+    "question": "Semantik HTML nima uchun muhim?",
+    "options": [
+      { "type": "text", "value": "SEO va qulaylikni oshirish uchun" },
+      { "type": "text", "value": "Ranglarni o'zgartirish uchun" },
+      { "type": "text", "value": "Animatsiyalar yaratish uchun" },
+      { "type": "text", "value": "Fayllarni saqlash uchun" }
+    ],
+    "answer": "SEO va qulaylikni oshirish uchun",
+    "explanations": {
+      "SEO va qulaylikni oshirish uchun": "To'g'ri! Semantik taglar qidiruv tizimlari va maxsus qurilmalar uchun tushunarli.",
+      "Ranglarni o'zgartirish uchun": "Bu CSS vazifasi.",
+      "Animatsiyalar yaratish uchun": "Bu JavaScript yoki CSS animatsiyalari bilan amalga oshiriladi.",
+      "Fayllarni saqlash uchun": "HTML fayllarni saqlamaydi."
+    }
+  },
+  {
+    "question": "Quyidagilardan qaysi biri semantik tag EMAS?",
+    "options": [
+      { "type": "text", "value": "<div>" },
+      { "type": "text", "value": "<header>" },
+      { "type": "text", "value": "<nav>" },
+      { "type": "text", "value": "<footer>" }
+    ],
+    "answer": "<div>",
+    "explanations": {
+      "<div>": "To'g'ri! <div> umumiy konteyner, semantik ma'noga ega emas.",
+      "<header>": "Semantik tag. Sahifa sarlavhasi uchun.",
+      "<nav>": "Semantik tag. Navigatsiya menyusi uchun.",
+      "<footer>": "Semantik tag. Sahifa pastki qismi uchun."
+    }
+  },
+  {
+    "question": "<footer> tegining vazifasi nima?",
+    "options": [
+      { "type": "text", "value": "Sahifa pastki qismini belgilash" },
+      { "type": "text", "value": "Rasm joylashtirish" },
+      { "type": "text", "value": "Matnni qalin qilish" },
+      { "type": "text", "value": "Jadval yaratish" }
+    ],
+    "answer": "Sahifa pastki qismini belgilash",
+    "explanations": {
+      "Sahifa pastki qismini belgilash": "To'g'ri! <footer> kontaktlar yoki muallif huquqlari uchun ishlatiladi.",
+      "Rasm joylashtirish": "Bu <img> tegining vazifasi.",
+      "Matnni qalin qilish": "Bu <strong> yoki <b> tegining roli.",
+      "Jadval yaratish": "Buning uchun <table> tegidan foydalaniladi."
+    }
+  },
+  {
+    "question": "Semantik HTML ekran o'qiydigan qurilmalarga qanday yordam beradi?",
+    "options": [
+      { "type": "text", "value": "Sahifa tuzilishini aniqroq tushunish uchun" },
+      { "type": "text", "value": "Rang kontrastini oshirish uchun" },
+      { "type": "text", "value": "Tezlikni oshirish uchun" },
+      { "type": "text", "value": "Fayl hajmini kamaytirish uchun" }
+    ],
+    "answer": "Sahifa tuzilishini aniqroq tushunish uchun",
+    "explanations": {
+      "Sahifa tuzilishini aniqroq tushunish uchun": "To'g'ri! Semantik taglar tuzilishni mantiqiy qiladi.",
+      "Rang kontrastini oshirish uchun": "Bu CSS va dizayn bilan bog'liq.",
+      "Tezlikni oshirish uchun": "Bu server sozlamalari va optimallashtirishga bog'liq.",
+      "Fayl hajmini kamaytirish uchun": "Semantik HTML bunda bevosita ta'sir ko'rsatmaydi."
+    }
+  },
+  {
+    "question": "Qaysi tag navigatsiya menyusini belgilash uchun ishlatiladi?",
+    "options": [
+      { "type": "text", "value": "<nav>" },
+      { "type": "text", "value": "<menu>" },
+      { "type": "text", "value": "<div>" },
+      { "type": "text", "value": "<head>" }
+    ],
+    "answer": "<nav>",
+    "explanations": {
+      "<nav>": "To'g'ri! <nav> navigatsiya havolalari uchun mo'ljallangan.",
+      "<menu>": "Bu teg o'z-o'zidan menyu yaratmaydi.",
+      "<div>": "Umumiy konteyner, semantik ma'nosi yo'q.",
+      "<head>": "Sahifa metadata si uchun ishlatiladi."
+    }
+  },
+  {
+    "question": "Semantik HTML dan foydalanishning asosiy afzalligi qaysi?",
+    "options": [
+      { "type": "text", "value": "Kodni tushunarli va SEO uchun optimallashtirish" },
+      { "type": "text", "value": "Rasmlarni avtomatik joylashtirish" },
+      { "type": "text", "value": "Matnni to'g'rilab berish" },
+      { "type": "text", "value": "Brauzerni tezlatish" }
+    ],
+    "answer": "Kodni tushunarli va SEO uchun optimallashtirish",
+    "explanations": {
+      "Kodni tushunarli va SEO uchun optimallashtirish": "To'g'ri! Semantik taglar kod va kontentni mantiqiy qiladi.",
+      "Rasmlarni avtomatik joylashtirish": "Bu CSS Grid yoki Flexbox bilan amalga oshiriladi.",
+      "Matnni to'g'rilab berish": "Bu matn muharrirlari yoki JavaScript vazifasi.",
+      "Brauzerni tezlatish": "Brauzer tezligi HTML dan ko'proq kod optimallashtirishga bog'liq."
+    }
+  }
+]

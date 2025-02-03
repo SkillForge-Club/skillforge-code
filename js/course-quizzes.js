@@ -35,10 +35,13 @@ fetch("/data/course-quizzes.json")
         const lessonElement = document.createElement("div");
         lessonElement.classList.add("quiz");
 
+        // In the unit.quizzes.forEach loop:
         lessonElement.innerHTML = `
-              <h3>${quiz.title}</h3> 
-              <button><a href="/quiz.html?quiz=${quiz.file}">Testni yechish</a></button>
-            `;
+          <h3>${quiz.title}</h3> 
+          <button>
+            <a href="/quiz.html?quiz=${encodeURIComponent(quiz.url)}">Testni yechish</a>
+          </button>
+          `;
         unitLessonsContainer.appendChild(lessonElement);
       });
 

@@ -1,0 +1,115 @@
+[
+  {
+    "question": "Kompyuter qanday qurilma?",
+    "options": [
+      { "type": "text", "value": "Shaxsiy yordamchi" },
+      { "type": "text", "value": "Ma'lumotlarni saqlash qurilmasi" },
+      { "type": "text", "value": "Ma'lumotlarni qayta ishlaydigan qurilma" },
+      { "type": "text", "value": "Elektron pochta dasturi" }
+    ],
+    "answer": "Ma'lumotlarni qayta ishlaydigan qurilma",
+    "explanations": {
+      "Ma'lumotlarni qayta ishlaydigan qurilma": "To'g'ri javob, chunki kompyuterning asosiy vazifasi shu.",
+      "Shaxsiy yordamchi": "Bu faqat metafora sifatida ishlatilgan.",
+      "Ma'lumotlarni saqlash qurilmasi": "Bu kompyuterning faqat bir qismi.",
+      "Elektron pochta dasturi": "Bu dasturiy ta'minotning bir turi, kompyuter emas."
+    }
+  },
+  {
+    "question": "Qaysi biri apparat komponentiga misol bo'la oladi?",
+    "options": [
+      { "type": "text", "value": "Microsoft Word" },
+      { "type": "text", "value": "Google Chrome" },
+      { "type": "text", "value": "Adobe Photoshop" },
+      { "type": "text", "value": "Protsessor (CPU)" }
+    ],
+    "answer": "Protsessor (CPU)",
+    "explanations": {
+      "Protsessor (CPU)": "To'g'ri javob, chunki u apparatga kiradi.",
+      "Microsoft Word": "Bu dasturiy ta'minot misoli.",
+      "Google Chrome": "Bu dasturiy ta'minot misoli.",
+      "Adobe Photoshop": "Bu dasturiy ta'minot misoli."
+    }
+  },
+  {
+    "question": "Bu rasmda qaysi operatsion tizim tasvirlangan?",
+    "image": "../assets/imgs/Courses/AsoslarKursi/1-dars/quiz.png",
+    "options": [
+      { "type": "text", "value": "Linux" },
+      { "type": "text", "value": "Windows" },
+      { "type": "text", "value": "macOS" },
+      { "type": "text", "value": "Android" }
+    ],
+    "answer": "Windows",
+    "explanations": {
+      "Windows": "Bu rasmda Windows operatsion tizimi logotipi tasvirlangan.",
+      "Linux": "Bu noto'g'ri, chunki Linuxning logotipi pingvin shaklida.",
+      "macOS": "Bu noto'g'ri, chunki macOS logotipi boshqa ko'rinishda.",
+      "Android": "Bu noto'g'ri, chunki Android logotipi yashil robot shaklida."
+    }
+  },
+  {
+    "question": "Dasturiy ta'minot qanday vazifa bajaradi?",
+    "options": [
+      { "type": "text", "value": "Apparatga buyruqlarni yetkazadi" },
+      { "type": "text", "value": "Apparatni ta'mirlaydi" },
+      { "type": "text", "value": "Elektron qismlarni boshqaradi" },
+      { "type": "text", "value": "O'yinlarni o'rnatadi" }
+    ],
+    "answer": "Apparatga buyruqlarni yetkazadi",
+    "explanations": {
+      "Apparatga buyruqlarni yetkazadi": "To'g'ri, dasturiy ta'minot apparatga nima qilish kerakligini aytadi.",
+      "Apparatni ta'mirlaydi": "Bu apparatni ta'mirlash vositasi emas.",
+      "Elektron qismlarni boshqaradi": "Bu apparatning qismi, dasturiy ta'minot emas.",
+      "O'yinlarni o'rnatadi": "Bu dasturiy ta'minotning mumkin bo'lgan funksiyasi, ammo asosiy vazifasi emas."
+    }
+  },
+  {
+    "question": "Ochiq manba dasturiga misol nima?",
+    "options": [
+      { "type": "text", "value": "Microsoft Office" },
+      { "type": "text", "value": "Windows" },
+      { "type": "text", "value": "Adobe Photoshop" },
+      { "type": "text", "value": "Linux" }
+    ],
+    "answer": "Linux",
+    "explanations": {
+      "Linux": "To'g'ri javob, Linux ochiq manba dastur hisoblanadi.",
+      "Microsoft Office": "Bu yopiq manba dastur.",
+      "Windows": "Bu yopiq manba dastur.",
+      "Adobe Photoshop": "Bu yopiq manba dastur."
+    }
+  },
+  {
+    "question": "Windows qanday operatsion tizimga tegishli?",
+    "options": [
+      { "type": "text", "value": "Microsoft" },
+      { "type": "text", "value": "Apple" },
+      { "type": "text", "value": "Google" },
+      { "type": "text", "value": "Linux Foundation" }
+    ],
+    "answer": "Microsoft",
+    "explanations": {
+      "Microsoft": "To'g'ri javob, chunki Windows Microsoft tomonidan ishlab chiqilgan.",
+      "Apple": "Apple macOS operatsion tizimini ishlab chiqadi.",
+      "Google": "Google Android operatsion tizimini ishlab chiqadi.",
+      "Linux Foundation": "Linux ochiq manba operatsion tizimini ishlab chiqadi."
+    }
+  },
+  {
+    "question": "Grafik interfeys (GUI) nimani anglatadi?",
+    "options": [
+      { "type": "text", "value": "Ikonkalar va menyular orqali boshqarish tizimi" },
+      { "type": "text", "value": "Matnli buyruqlar orqali boshqarish tizimi" },
+      { "type": "text", "value": "Mobil dasturlarni boshqarish tizimi" },
+      { "type": "text", "value": "Jarayonlarni boshqarish tizimi" }
+    ],
+    "answer": "Ikonkalar va menyular orqali boshqarish tizimi",
+    "explanations": {
+      "Ikonkalar va menyular orqali boshqarish tizimi": "To'g'ri, GUI grafik interfeysni anglatadi.",
+      "Matnli buyruqlar orqali boshqarish tizimi": "Bu CLI (buyruq satri interfeysi) dir.",
+      "Jarayonlarni boshqarish tizimi": "Bu umumiy javob va noto'g'ri.",
+      "Mobil dasturlarni boshqarish tizimi": "GUI faqat mobil tizimlar uchun emas."
+    }
+  }
+]
